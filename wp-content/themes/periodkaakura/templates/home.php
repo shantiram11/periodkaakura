@@ -10,8 +10,17 @@
 get_header();
 ?>
     <main id="primary" class="site-main">
-        <?php
-        ?>
+  
+<?php
+get_template_part('template-parts/sections/hero');
+?>
+
+<?php 
+get_template_part('template-parts/sections/team');
+?>
+<?php 
+get_template_part('template-parts/sections/testimonial');
+?>
     </main>
 
 <?php

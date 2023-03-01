@@ -1,0 +1,120 @@
+.three{
+    margin: 98px;
+    padding: 100px 100px;
+  }
+  .three h1{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+  }
+  .testimonials{
+    display: grid;
+    grid-template-columns: 374px 675px;
+    grid-template-rows: 325px;
+    gap: 195px;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+  .gyan{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    text-align: center;
+    padding: 45px 45px;
+  }
+  .testimonials h1{
+font-weight: 800;
+font-size: 18px;
+  }
+  .testimonials span{
+    font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+text-align: justify;
+
+color: rgba(156, 17, 18, 0.5);
+  }
+  .testimonials p{
+font-weight: 500;
+font-size: 12px;
+  }
+  .creator{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    text-align: center;
+    padding: 45px 45px;
+
+  }
+  .image{
+    display: flex;
+    height: 75px;
+    width: 75px;
+    filter: drop-shadow(-3px 6px 4px rgba(0, 0, 0, 0.45));
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-left: 50%;
+  }
+  #gyanIm{
+    filter: drop-shadow(-3px 6px 4px rgba(0, 0, 0, 0.45));
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .four{
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    color: white;
+    position: relative;
+  }
+.content{
+position: absolute;
+  background-image: url('./image/background.png');
+ min-width: 100%;
+ min-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contents{
+margin-top: 100px;
+}
+.contents h1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  color: #FFFFFF;
+}
+.contents p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+padding-left: 70px;
+padding-right: 70px;
+color: #FFFFFF;
+}
+.butts{
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.butts button{
+  border: 4px solid #FFFFFF;
+border-radius: 25px;
+color: white;
+background-color: rgba(0, 0, 0, .25);
+
+}
+.butts button:hover{
+  background-color: #9C1112;
+  color: white;
+}

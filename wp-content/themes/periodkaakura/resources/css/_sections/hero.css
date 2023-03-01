@@ -1,0 +1,101 @@
+i{
+    height: 16px;
+    width: 16px; 
+  }
+  .one{
+      padding: 150px;
+      display: grid;
+      grid-template-columns: repeat(2,600px);
+      grid-template-rows: 212px;
+      gap: 131px;
+  }
+  .talk{
+      font-family: 'Montserrat';
+  color: #9C1112;
+  margin-top: 100px;
+  }
+  .talk p{
+      color: black;
+      font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  
+  }
+  .talk h1{
+      font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: #9C1112;
+  }
+  .talk span{
+      font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #9C1112;
+  }
+  .talkimage{
+      width: 522px;
+      height: 522px;
+      /* background: url(pkk logo-02.png); */
+  box-shadow: 16px 25px 6px -4px rgba(0, 0, 0, 0.4);
+  background: #9C1112;
+  ;
+  }
+.buttons{
+    margin-top: 10px;
+}
+button{
+    background: #ECECEC;
+    border-radius: 25px;
+    color: #9C1112;
+    font-family: 'Montserrat';
+width: 211px;
+height: 46px;
+border: none;
+}
+.buttons button:hover{
+    background: #9C1112;
+    color: white;
+}
+#subscribe{
+
+    width: 136px;
+    height: 32px;
+    margin-top: 20px;
+}
+#subscribe span{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #9C1112;    
+}
+.down{
+    margin-top: 20px;
+    width: 523px;
+}
+a{
+    background: #ECECEC;
+    border-radius: 15.3111px;
+    padding: 10px;
+    color: black;
+    font-family: 'Sen';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+width: 129px;
+height: 28px;
+}
+.down a:hover{
+    background-color: #9C1112;
+    color: white;
+}
