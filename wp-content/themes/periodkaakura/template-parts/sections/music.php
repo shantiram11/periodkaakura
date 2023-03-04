@@ -1,37 +1,34 @@
-<section>
-   <div class="music">
-<div class="player">
-    <div>1</div>
-    <div>
-    <ul class="buttons">
-            <a href="#" class="button button-sm">
-                <i class="fas fa-random fa-sm" aria-hidden="true"></i>
-                <span class="sr-only">Shuffle</span>
-            </a>
-            <a href="#" class="button button-md">
-                <i class="fas fa-step-backward" aria-hidden="true"></i>
-                <span class="sr-only">Previous Music</span>
-            </a>
-            <a href="#" class="button button-lg">
-                <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                <span class="sr-only">Pause</span>
-            </a>
-            <a href="#" class="button button-md">
-                <i class="fas fa-step-forward"></i>
-                <span class="sr-only">Next Music</span>
-            </a>
-            <a href="#" class="button button-sm">
-                <i class="fas fa-circle-notch fa-sm" aria-hidden="true"></i>
-                <span class="sr-only">Repeat Song</span>
-            </a>
-        </ul>
+<section class="container">
+    <div class="container-content">
+        <div>
+<img src="" alt="image">
+        </div>
+        <div>
+            <h1>Episode Name</h1>
+            <span>Episode Number</span>
+        </div>
+        <div class="icons">
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-pause"></i>
+        <i class="fa-solid fa-forward"></i>
+        </div>
+        <div class="prog">
+            <div class="prog-time">
+                <p class="left">0:00</p>
+                <p class="right">2:06</p>
+            </div>
+            <div class="prog-bar">
+                <div class="prog-bar-inner"></div>
+            </div>
+        </div>
+        <div class="volume">
+        <i class="fa-solid fa-volume-low"></i>
+        <div class="prog-bar-two">
+                <div class="prog-bar-inner"></div>
+            </div>
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-sharp fa-solid fa-share-nodes"></i>
     </div>
-    <div class="prog-bar">
-    <div class="prog-bar-inner"></div>
-    </div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-</div>
-   </div>
 </section>

@@ -29,4 +29,5 @@ mix.combine([
     'assets/css/_sections/team.css',
     'assets/css/_sections/music.css',
 
+
 ], 'assets/css/theme.css');
