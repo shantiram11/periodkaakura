@@ -5,10 +5,12 @@ mix
     .postCss('resources/css/_sections/_header.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/_footer.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/hero.css', 'assets/css/_sections')
-    .postCss('resources/css/_sections/playlist.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/podcast.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/testimonial.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/team.css', 'assets/css/_sections')
-    .postCss('resources/css/_sections/music.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/playlist.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/section.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/gallery.css', 'assets/css/_sections')
 
     .options({
         processCssUrls: false,
@@ -24,10 +26,13 @@ mix.combine([
     'assets/css/_sections/_header.css',
     'assets/css/_sections/_footer.css',
     'assets/css/_sections/hero.css',
-    'assets/css/_sections/playlist.css',
+    'assets/css/_sections/podcast.css',
     'assets/css/_sections/testimonial.css',
     'assets/css/_sections/team.css',
-    'assets/css/_sections/music.css',
+    'assets/css/_sections/playlist.css',
+    'assets/css/_sections/section.css',
+    'assets/css/_sections/gallery.css',
+
 
 
 ], 'assets/css/theme.css');

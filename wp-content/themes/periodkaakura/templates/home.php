@@ -15,10 +15,7 @@ get_header();
 get_template_part('template-parts/sections/hero');
 ?>
 <?php
-get_template_part('template-parts/sections/music');
-?>
-<?php
-get_template_part('template-parts/sections/playlist');
+get_template_part('template-parts/sections/podcast');
 ?>
 <?php 
 get_template_part('template-parts/sections/team');
@@ -26,7 +23,12 @@ get_template_part('template-parts/sections/team');
 <?php 
 get_template_part('template-parts/sections/testimonial');
 ?>
-
+<?php 
+get_template_part('template-parts/sections/gallery');
+?>
+<?php 
+get_template_part('template-parts/sections/playlist');
+?>
     </main>
 
 <?php
