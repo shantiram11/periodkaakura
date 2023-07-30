@@ -49,6 +49,7 @@ i{
   }
 .buttons{
     margin-top: 10px;
+    float: left;
 }
 button{
     background: #ECECEC;
@@ -79,8 +80,8 @@ border: none;
     color: #9C1112;    
 }
 .down{
-    margin-top: 20px;
-    width: 523px;
+    margin-top: 120px;
+    width: 650px;
 }
 a{
     background: #ECECEC;

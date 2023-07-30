@@ -1,0 +1,9 @@
+.buttons{
+    box-sizing: border-box;
+    background: #9C1112;
+    border: 4px solid #FFFFFF;
+    height: 40px;
+    width: 131px;
+    border-radius: 25px;
+    text-align:center;
+}

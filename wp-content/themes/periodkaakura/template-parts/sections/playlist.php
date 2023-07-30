@@ -1,62 +1,44 @@
+<section class="px-32">
+<div class='w-full'>
+  <div class="flex flex-row justify-between p-2">
+    <div class='flex flex-col'>
+      <h1 class="font-black">Suggested Podcasts</h1>
+      <p class="font-thin">Browse all</p>
+    </div>
+    <input
+      type="text"
+      placeholder="Enter something..."
+      class='w-full rounded-md border-black'
+    />
+    <div>
+      <ul>
+        <li>filter</li>
+      </ul>
+    </div>
+  </div>
 
-    <section class="playlist">
-        <div class="texts">
-          <div class="text">
-            <h1>Latest Episode</h1>
-            <span>Browse all</span>
-          </div>
-          <div class="search">
-            <form action="#">
-              
-                <input type="text"
-                    placeholder=" Search Courses"
-                    name="search">
-               
-                </button>
-            </form>
+  <div class="w-full flex flex-col justify-center bg-black text-white p-2 rounded-md">
+
+    <div class="flex flex-row justify-between gap-10 text-white p-2">
+      <div class="flex flex-row justify-center items-center gap-4">
+        <img src={head} alt="" />
+        <div class="flex flex-col justify-start items-start">
+          <h1 class="hover:text-red-600 font-black">Episode 1</h1>
+          <p class="hover:text-red-600 font-thin">Episode name here</p>
         </div>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown<i class="fa-solid fa-chevron-down"></i></button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        </div>
-    <div class="box">
-   <table>
-    <tr>
-      <th>&nbsp</th>
-      <th>&nbsp</th>
-      <th>&nbsp</th>
-    </tr>
-    <tr>
-      <td>
-        <img src="../image/head.png" width="60px" height="59px" style="border-radius: 15px;">
-      </td>
-      <td>Episode Name</td>
-      <td>Duration</td>
-    </tr>
-   </table>  
+      </div>
+
+      <div class="flex flex-row justify-center items-center">
+        <span class="hover:text-red-600">22:37</span>
+        <span>Minutes</span>
+      </div>
     </div>
+
+    <div class="flex flex-row justify-center items-center gap-12 bottom-0 left-0">
+      <span><i class="fa-solid fa-backward-step"></i>Previous</span>
+      <span>Next&nbsp;<i class="fa-solid fa-forward-step"></i></span>
     </div>
-       </section>
-       <!-- <script>
-        function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-       </script> -->
+  </div>
+</div>
+
+</section>
