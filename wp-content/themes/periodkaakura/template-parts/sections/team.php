@@ -1,3 +1,9 @@
+<section class="two">
+  <div class="flex flex-row justify-center items-center gap-4 max-sm:flex-col py-24 max-lg:flex-col">
+    <div class="Box">
+      <div class="flex flex-col justify-start items-center text-white py-12 gap-4 max-sm:px-3">
+        <h1 class="font-black">Meet the team</h1>
+        <p>Creators and host</p>
 
 <div class="flex flex-row justify-center items-center  gap-4 max-sm:flex-col py-24 max-lg:flex-col">
   <div class="box">
