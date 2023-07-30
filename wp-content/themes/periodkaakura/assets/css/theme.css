@@ -958,8 +958,7 @@ img.contain-image {
 
 h1 {
     font-weight: 800;
-    font-size: 60px;
-    line-height: 73px;
+
 }
 
 h2{
@@ -1235,23 +1234,75 @@ height: 28px;
     color: white;
 }
 
-<<<<<<< HEAD
-.playlist{
-  width: 100%;
-  height: 100%;
+.music{
+    margin-top: 250px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.5) 100%);
+border: 0.96762px solid #000000;
+-webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
 }
-.playlist-container{
-  display: flex;
-  flex-direction: flex-row;
+.player{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
 }
-=======
-.audioStyle {
-  /* background-image: url("path/to/your/background-image.jpg"); */
-  background-size: cover;
-  background-position: center;
-  /* Add other background styles if needed */
+.prog-bar {
+    width: 100%;
+    height: 10px;
+    padding: 1px;
+    border-radius: 25px;
+
+    background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+    box-shadow:  5px 5px 10px #a5a5a5, 
+                -5px -5px 10px #ffffff;
+
 }
->>>>>>> 3831c66deb8f25decb9f1e86e98894aa0d720c1c
+.prog-bar-inner {
+    height: 8px;
+    background: var(--prog);
+    border-radius: 25px;
+}
+.buttons {
+    margin: 2rem 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    color: var(--prog);
+    border-radius: 50%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #d4d4d4, 
+                -5px -5px 10px #ffffff;
+}
+
+.button-sm {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.75;
+}
+
+.button-md {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0.85;
+}
+.button-lg {
+    width: 3.25rem;
+    height: 3.25rem;
+    box-shadow: inset 6px 6px 12px #c8c8c8, 
+            inset -6px -6px 12px #ffffff
+}
+
+
 
 .BoxOne{
   background: #FFFFFF;
@@ -1342,5 +1393,7 @@ border: 0.96762px solid #000000;
     box-shadow: inset 6px 6px 12px #c8c8c8, 
             inset -6px -6px 12px #ffffff
 }
+
+
 
 
