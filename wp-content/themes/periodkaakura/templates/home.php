@@ -13,12 +13,10 @@ get_header();
   
 <?php
 get_template_part('template-parts/sections/hero');
-?>
 
-<?php 
+the_content();
 get_template_part('template-parts/sections/team');
-?>
-<?php 
+get_template_part('template-parts/sections/music');
 get_template_part('template-parts/sections/testimonial');
 ?>
     </main>

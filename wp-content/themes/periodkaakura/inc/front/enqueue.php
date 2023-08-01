@@ -11,10 +11,11 @@ function periodkaakura_scripts()
     wp_register_style('font-awesome-style', $uri . '/assets/css/all.min.css', [], $ver);
     wp_register_style('periodkaakura-font', $uri . '/assets/css/fonts.css', [], $ver);
     wp_register_style('periodkaakura-theme', $uri . '/assets/css/theme.css', [], $ver);
-
+    wp_register_style('custom-css', $uri . '/assets/css/custom.css', [], $ver);
     wp_enqueue_style('font-awesome-style');
     wp_enqueue_style('periodkaakura-font');
     wp_enqueue_style('periodkaakura-theme');
+    wp_enqueue_style('custom-css');
 
     wp_enqueue_style('periodkaakura-style', get_stylesheet_uri(), array(), _S_VERSION);
     wp_style_add_data('periodkaakura-style', 'rtl', 'replace');
