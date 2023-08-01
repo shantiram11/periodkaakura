@@ -4,8 +4,8 @@
 
   <div class="flex flex-row justify-center items-center gap-14 max-sm:flex-col max-sm:py-12 max-md:flex-col max-lg:flex-col max-sm:px-4 px-32">
     <div class="BoxOne flex flex-col justify-center items-center  max-sm:px-3 p-4">
-      <img src="../image/gyanmaharjan.png" alt="">
-      <h1>Gyan Maharjan</h1>
+      <img src="../image/gyanmaharjan.png" alt="gyanm">
+      <h3 class="font-black">Gyan Maharjan</h3>
       <span class="text-[#9C1112]">President X-Pose Nepal</span>
       <p class="font-medium">
         “Menstruation is not an issue for females. Unless we males are aware
@@ -16,10 +16,10 @@
 
     <div class="BoxOne flex flex-col justify-center items-center max-sm:px-3 p-4">
       <div class="flex flex-row justify-center items-center">
-        <img src="priyankabudhathoki.png" alt="">
-        <img src="../image/shristikafle.png" class="-translate-x-6" alt="">
+        <img src="priyankabudhathoki.png" alt="priaynkabdthk">
+        <img src="../image/shristikafle.png" class="-translate-x-6" alt="shristikafle">
       </div>
-      <h1>Priyanka & Shristi</h1>
+      <h3 class="font-black">Priyanka & Shristi</h3>
       <span class="text-[#9C1112]">Co-creator of Period Kaa Kura</span>
       <p class="font-medium">
         People fighting against period taboos and the stigma they faced

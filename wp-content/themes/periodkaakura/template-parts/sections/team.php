@@ -1,14 +1,14 @@
   <div class="flex flex-row justify-center items-center gap-4 max-sm:flex-col py-24 max-lg:flex-col">
     <div class="bg-black">
       <div class="flex flex-col justify-start items-center text-white py-12 gap-4 max-sm:px-3">
-        <h1 class="font-black">Meet the team</h1>
+        <h3 class="font-black">Meet the team</h3>
         <p>Creators and host</p>
 
         <div class="flex flex-row justify-start items-center gap-3 max-sm:flex-col px-24">
           <img src="<?php echo get_template_directory(); ?>../../../../assets//img/priyankabudhathoki.png" alt="priyankabuddhathoki">
 
           <div class="flex flex-col justify-start items-start ">
-            <h1> Priyanka Buddhathoki</h1>
+            <h3 class="font-black"> Priyanka Buddhathoki</h3>
             <p>
               Priyanka Budhathoki is a development communication professional
               for over ten years. Priyanka began her journalism career through
@@ -24,7 +24,7 @@
         <div class="flex flex-row justify-start items-center gap-3 max-sm:flex-col px-24">
           <img src="<?php echo get_template_directory(); ?>../../../../assets//img/shristikafle.png" alt="shristikafle">
           <div class="flex flex-col justify-start items-start">
-            <h1>Shristi Kafle</h1>
+            <h3 class="font-black">Shristi Kafle</h3>
             <p>
               Shristi Kafle is a journalist by profession, having worked for the
               international media for the last few years. She writes on various
@@ -38,7 +38,7 @@
             </p>
           </div>
         </div>
-        
+
       </div>
     </div>
 

@@ -1,6 +1,6 @@
 <div class='flex flex-col justify-center items-center gap-12  max-sm:px-0 py-12'>
     <div class="flex flex-row justify-center items-center  gap-24 bg-black text-white p-8 rounded-lg max-sm:flex-col max-md:flex-col" ">
-  <img src=" {music}" alt="" />
+  <img src="" alt=" album" />
     <div class="flex flex-col justify-start gap-4 w-full">
         <h1 class="text-6xl">Episode 1</h1>
         <p>Episode Name Here</p>
@@ -53,7 +53,7 @@
             </div>
         </form>
         <div className='flex flex-row'>
-            <img src="" alt="" />
+            <img src="" alt="profile" />
             <div class="flex-col">
                 <div class="flex justify-between">
                     <h2 class="font-black">Shantiram Tiwari</h2>
@@ -62,8 +62,9 @@
                 <p>A space for menstruators to speak on the silenced subject period"</p>
             </div>
         </div>
+
     </div>
-    <div class="w-full flex flex-col justify-center">
+    <div class="w-full flex flex-col justify-center bg-gray-50">
         <div class="flex flex-col justify-start items-start">
             <h2 class="font-black">Suggested Podcasts</h2>
             <p class="font-thin">Browse all</p>
@@ -73,7 +74,22 @@
             <div class="flex flex-row justify-center items-center gap-4">
                 <img src="{head}" alt="" />
                 <div class="flex flex-col justify-start items-start">
-                    <h1 class="hover:text-red-600 font-black">Episode 1</h1>
+                    <h3 class="hover:text-red-600 font-black">Episode 1</h3>
+                    <p class="hover:text-red-600 font-thin">Episode name here</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center items-center">
+                <span class="hover:text-red-600">22:37</span>
+                <span>Minutes</span>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between rounded-md hover:bg-black hover:text-white py-4 hover:rounded-md gap-10 ">
+            <div class="flex flex-row justify-center items-center gap-4">
+                <img src="{head}" alt="" />
+                <div class="flex flex-col justify-start items-start">
+                    <h3 class="hover:text-red-600 font-black">Episode 1</h3>
                     <p class="hover:text-red-600 font-thin">Episode name here</p>
                 </div>
             </div>

@@ -8,7 +8,6 @@ mix
     .postCss('resources/css/_sections/podcast.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/testimonial.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/team.css', 'assets/css/_sections')
-    .postCss('resources/css/_sections/music.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/episodelist.css', 'assets/css/_sections')
 
     .options({
@@ -28,7 +27,6 @@ mix.combine([
     'assets/css/_sections/podcast.css',
     'assets/css/_sections/testimonial.css',
     'assets/css/_sections/team.css',
-    'assets/css/_sections/music.css',
     'assets/css/_sections/episodelist.css',
 
 

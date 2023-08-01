@@ -33,12 +33,12 @@
     Subscribe us on
     </button>
     <div class="flex flex-row justify-start items-start max-sm:flex-wrap max-sm:justify-center max-sm:items-center gap-12 max-sm:gap-4  max-sm:ml-0">
-      <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-brands fa-apple"></i> Apple Podcast</a>
+      <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold" ><i class="fa-brands fa-apple"></i> Apple Podcast</a>
       <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-brands fa-soundcloud"></i>Sound Cloud</a>
       <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-solid fa-rss"></i>RSS Feed</a>
     </div>
   </div>
-  <img src="{period}" alt="logo" />
+  <img src="<?php get_template_directory()?>../../../../assets//img//period.png" alt="logo">
 <div class="-mt-48 max-sm:py-32">
   <img src="{thread}" alt="" />
 </div>
