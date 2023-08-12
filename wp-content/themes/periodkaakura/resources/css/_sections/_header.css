@@ -25,3 +25,8 @@ li{
     list-style-type: none;
     padding: 20px;
 }
+@media screen and (max-width: 768px) {
+    nav{
+        font-size: 12px;
+    }
+}

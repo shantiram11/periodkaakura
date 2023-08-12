@@ -1,6 +1,7 @@
-<div class="bg-gray-500 text-white flex justify-evenly items-center p-4">
-    <img src="" alt="headphone">
-    <div class="flex flex-col justify-start">
+<div class="bg-gray-500 text-white flex justify-evenly items-center p-4 miniplay">
+<img class="image"  src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/head.png") ?>"
+     alt="alternative-text-for-image">   
+      <div class="flex flex-col justify-start">
         <h6>Episode 1</h6>
         <span>Episode name here</span>
     </div>

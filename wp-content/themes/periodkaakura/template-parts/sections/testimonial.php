@@ -1,10 +1,11 @@
 <div class="flex flex-col justify-start items-start py-24 gap-12 ">
 
-  <h1 class="font-black flex justify-start items-start text-center text-xl px-32">Testimonials</h1>
+  <h1 class="font-black sm flex justify-start items-start text-center text-xl px-32">Testimonials</h1>
 
-  <div class="flex flex-row justify-center items-center gap-14 max-sm:flex-col max-sm:py-12 max-md:flex-col max-lg:flex-col max-sm:px-4 px-32">
+  <div class="flex flex-row justify-center items-center gap-14  px-32 testinomials">
     <div class="BoxOne flex flex-col justify-center items-center  max-sm:px-3 p-4">
-      <img src="../image/gyanmaharjan.png" alt="gyanm">
+    <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/gyanmaharjan.png") ?>"
+     alt="gyanmaharjan">
       <h3 class="font-black">Gyan Maharjan</h3>
       <span class="text-[#9C1112]">President X-Pose Nepal</span>
       <p class="font-medium">
@@ -16,8 +17,11 @@
 
     <div class="BoxOne flex flex-col justify-center items-center max-sm:px-3 p-4">
       <div class="flex flex-row justify-center items-center">
-        <img src="priyankabudhathoki.png" alt="priaynkabdthk">
-        <img src="../image/shristikafle.png" class="-translate-x-6" alt="shristikafle">
+      <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/miniP.png") ?>"
+     alt="priaynkabdthk">
+     <img class="-translate-x-6" src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/miniS.png") ?>"
+     alt="shristikafle">
+       
       </div>
       <h3 class="font-black">Priyanka & Shristi</h3>
       <span class="text-[#9C1112]">Co-creator of Period Kaa Kura</span>

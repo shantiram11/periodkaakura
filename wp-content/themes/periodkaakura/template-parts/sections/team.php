@@ -1,15 +1,15 @@
-  <div class="flex flex-row justify-center items-center gap-4 max-sm:flex-col py-24 max-lg:flex-col">
+  <div class="flex flex-row justify-center  items-center gap-4 max-sm:flex-col py-24 max-lg:flex-col team">
     <div class="bg-black">
       <div class="flex flex-col justify-start items-center text-white py-12 gap-4 max-sm:px-3">
         <h3 class="font-black">Meet the team</h3>
         <p>Creators and host</p>
 
-        <div class="flex flex-row justify-start items-center gap-3 max-sm:flex-col px-24">
-          <img src="<?php echo get_template_directory(); ?>../../../../assets//img/priyankabudhathoki.png" alt="priyankabuddhathoki">
-
+        <div class="flex flex-row justify-start items-center gap-3  px-20 image">
+        <img class="responsive-image hover:scale-75" src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/priyankabudhathoki.png") ?>"
+     alt="priaynkabdthk">
           <div class="flex flex-col justify-start items-start ">
             <h3 class="font-black"> Priyanka Buddhathoki</h3>
-            <p>
+            <p class="hover:text-red-300">
               Priyanka Budhathoki is a development communication professional
               for over ten years. Priyanka began her journalism career through
               radio and has produced dozens of radio talk shows and magazines.
@@ -21,11 +21,12 @@
           </div>
         </div>
 
-        <div class="flex flex-row justify-start items-center gap-3 max-sm:flex-col px-24">
-          <img src="<?php echo get_template_directory(); ?>../../../../assets//img/shristikafle.png" alt="shristikafle">
-          <div class="flex flex-col justify-start items-start">
-            <h3 class="font-black">Shristi Kafle</h3>
-            <p>
+        <div class="flex flex-row justify-start items-center gap-3 max-sm:flex-col px-24 image">
+        <img class="responsive-image hover:scale-75" src="<?php echo esc_url(get_template_directory_uri() . "/assets/img/shristikafle.png") ?>"
+     alt="shristikafle">        
+       <div class="flex flex-col justify-start items-start">
+            <h3 class="font-black ">Shristi Kafle</h3>
+            <p class="hover:text-red-300">
               Shristi Kafle is a journalist by profession, having worked for the
               international media for the last few years. She writes on various
               issues covering from politics to environment to social. She has a
@@ -43,7 +44,7 @@
     </div>
 
     <div>
-      <div class='px-12 py-12 flex flex-col gap-4'>
+      <div class='px-2 py-24 flex flex-col gap-4 '>
         <h2 class='font-black'>Contact us</h2>
         <p class='text-[rgba(18, 18, 18, 0.5)] font-light'>
           Period Kaa Kura is a personal initiation of the creators. For collaboration,
@@ -58,7 +59,7 @@
         </textarea>
         </div>
 
-        <button class='border rounded-md '><i class="fa-solid fa-paper-plane"></i>Send</button>
+        <button class=' team-button'><i class="fa-solid fa-paper-plane"></i>Send</button>
 
         <p class='font-black'>Connect with us on social media</p>
         <div class='flex flex-row justify-center items-center list-none gap-4'>

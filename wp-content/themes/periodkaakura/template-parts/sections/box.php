@@ -1,5 +1,5 @@
-<div class='flex flex-row justify-center items-center gap-5 py-24 max-sm:flex-col max-md:flex-col'>
-        <div class='bg-black h-[300px] w-[300px]'>one</div>
-        <div class='bg-black h-[300px] w-[300px]'>two</div>
-        <div class='bg-black h-[300px] w-[300px]'>three</div>
+<div class='flex flex-row justify-center items-center gap-5 py-24 boxes'>
+        <div class='bg-black box-size '>one</div>
+        <div class='bg-black box-size'>two</div>
+        <div class='bg-black box-size'>three</div>
     </div>

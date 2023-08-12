@@ -24,9 +24,11 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
     <header id="masthead" class="site-header relative">
-      
+ 
     <nav>
+      
             <ul>
+              
               <li><i class="fa-solid fa-magnifying-glass"></i></li>
               <li>Testinomials</li>
               <li>Podcast</li>

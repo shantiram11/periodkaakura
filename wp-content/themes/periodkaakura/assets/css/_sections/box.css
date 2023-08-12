@@ -1,0 +1,16 @@
+
+.box-size{
+width: 300px;
+height: 300px;
+}
+@media screen and (max-width: 768px) {
+    .box-size{
+     width: 200px;
+     height: 200px;
+    }
+    .boxes{
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+    }
+  }

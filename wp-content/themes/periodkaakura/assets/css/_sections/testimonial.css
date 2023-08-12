@@ -1,5 +1,22 @@
+
 .BoxOne{
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .testinomial{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  .testinomials{
+    font-size: 14px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 4px;
+  }
 }

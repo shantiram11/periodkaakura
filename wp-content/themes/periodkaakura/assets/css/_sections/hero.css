@@ -52,7 +52,6 @@ i{
     float: left;
 }
 button{
-    background: #ECECEC;
     border-radius: 25px;
     color: #9C1112;
     font-family: 'Montserrat';
@@ -100,3 +99,64 @@ height: 28px;
     background-color: #9C1112;
     color: white;
 }
+.paragra{
+    gap: 12px;
+}
+@media screen and (max-width: 768px) {
+ .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 90px;
+    gap:10px;
+ }
+ .hero-text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+ }
+ .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+ }
+.heading{
+display: flex;
+justify-content: start;
+align-items: flex-start;
+text-align: left;
+padding: 10px;
+}
+.image{
+    max-width: 70%;
+}
+.para{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+button{
+    width: 180px;
+    height: 46px;
+}
+.feed{
+    display: flex;
+    padding: 10px;
+    gap: 4px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+.paragra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+       }
