@@ -34,7 +34,7 @@
       <i class="fa-solid fa-microphone text-red-600"></i>
       Subscribe us on
     </button>
-    <div class="flex flex-row justify-start items-start feed">
+    <div class="flex flex-row justify-start items-start gap-12 feed">
       <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-brands fa-apple"></i> Apple Podcast</a>
       <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-brands fa-soundcloud"></i>Sound Cloud</a>
       <a href="#" class="bg-[#ECECEC]  p-2 rounded-md font-bold"><i class="fa-solid fa-rss"></i>RSS Feed</a>
