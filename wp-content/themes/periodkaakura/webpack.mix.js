@@ -5,7 +5,7 @@ mix
     .postCss('resources/css/_sections/_header.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/hero.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/episodeList.css', 'assets/css/_sections')
-
+    .postCss('resources/css/_sections/teamAndContact.css', 'assets/css/_sections')
     .options({
         processCssUrls: false,
         postCss: [
@@ -20,6 +20,7 @@ mix.combine([
     'assets/css/_sections/_header.css',
     'assets/css/_sections/hero.css',
     'assets/css/_sections/episodeList.css',
+    'assets/css/_sections/teamAndContact.css',
 
 
 ], 'assets/css/theme.css');

@@ -1,0 +1,36 @@
+.section-team-and-contact .container .grid{
+    grid-template-columns: 60% 40%;
+}
+.section-team-and-contact .title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-team-and-contact .subtitle{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.team-name{
+    color: #FFF;
+    font-family: Sen;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.team-description{
+    color: #FFF;
+    text-align: justify;
+    font-family: Sen;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
