@@ -24,15 +24,20 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
     <header id="masthead" class="site-header relative">
-      
-    <nav>
-            <ul>
-              <li><i class="fa-solid fa-magnifying-glass"></i></li>
-              <li>Testinomials</li>
-              <li>Podcast</li>
-              <li>About us</li>
-            </ul>
-          </nav>
-    </div>
-     
+        <div id="nav">
+            <div class="container">
+                <div class="flex justify-between">
+                    <img class="object-cover w-[53px] h-[53px]"
+                         src="<?php echo get_template_directory_uri() . '/assets/img/temp/header-logo.svg' ?>">
+                    <ul>
+                        <li class="">About us</li>
+                        <li class="">Podcast</li>
+                        <li class="">Testinomials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header><!-- #masthead -->
+</div>
+
+

@@ -1,12 +1,8 @@
 {
     "/assets/css/fonts.css": "/assets/css/fonts.css",
-    "/assets/css/_sections/podcast.css": "/assets/css/_sections/podcast.css",
+    "/assets/css/_sections/episodeList.css": "/assets/css/_sections/episodeList.css",
     "/assets/css/_sections/hero.css": "/assets/css/_sections/hero.css",
-    "/assets/css/_sections/_footer.css": "/assets/css/_sections/_footer.css",
     "/assets/css/_sections/_header.css": "/assets/css/_sections/_header.css",
     "/assets/css/_sections/_general.css": "/assets/css/_sections/_general.css",
-    "/assets/css/_sections/episodelist.css": "/assets/css/_sections/episodelist.css",
-    "/assets/css/_sections/team.css": "/assets/css/_sections/team.css",
-    "/assets/css/_sections/testimonial.css": "/assets/css/_sections/testimonial.css",
     "/assets/css/theme.css": "/assets/css/theme.css"
 }
