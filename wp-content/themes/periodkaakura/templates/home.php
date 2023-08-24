@@ -15,7 +15,8 @@ get_header();
     get_template_part('template-parts/sections/hero');
     get_template_part('template-parts/sections/episodeList');
     get_template_part('template-parts/sections/teamAndContact');
-
+    get_template_part('template-parts/sections/testimonials');
+    get_template_part('template-parts/sections/photoGallery');
     ?>
 </main>
 

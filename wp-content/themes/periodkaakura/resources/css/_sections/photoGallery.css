@@ -1,0 +1,19 @@
+.gallery-buttons a{
+    color: #FFF;
+    font-family: Montesserat, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 25px;
+    border: 4px solid #FFF;
+    background: #000000;
+    padding: 5px 34px
+}
+.gallery-buttons a:hover{
+    background-color: #9C1112;
+}
+.gallery-image{
+    background: #191919;
+    box-shadow: 14px 21px 12px 13px rgba(0, 0, 0, 0.25);
+}
