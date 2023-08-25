@@ -14,6 +14,6 @@
     background-color: #9C1112;
 }
 .gallery-image{
-    background: #191919;
-    box-shadow: 14px 21px 12px 13px rgba(0, 0, 0, 0.25);
+    background: #9C1112;
+    box-shadow: 14px 21px 12px 5px rgba(156, 17, 18, 0.58);
 }

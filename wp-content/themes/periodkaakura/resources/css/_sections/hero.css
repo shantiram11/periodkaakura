@@ -57,7 +57,7 @@
     grid-template-columns: 21% 76%;
     display: grid;
     border: 0.968px solid #000;
-    background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.50) 100%);
+    background: linear-gradient(180deg, #9C1112 9.38%, rgba(0, 0, 0, 0.50) 100%);
 
 }
 .single-audio-player span{

@@ -38,13 +38,15 @@
 .team-section{
     margin-left: -3vw;
     padding-left: 3vw;
-    background: #1D1D1D;
-    box-shadow: 8px 22px 17px 14px rgba(0, 0, 0, 0.15);
+    background: #9C1112;
+    box-shadow: 8px 22px 17px 14px rgba(156, 17, 18, 0.58);
 }
 .contact-section form input,
 .contact-section form textarea
 {
-    box-shadow: 0px 6px 11px 3px rgba(0, 0, 0, 0.15);
+    font: Montserrat "Helvetica Neue";
+    color: #9C1112;
+    box-shadow:5px 6px 6px 0px rgba(156, 17, 18, 0.58);
     border-radius: 10px;
     width: 80%;
 }
@@ -53,7 +55,7 @@
     outline: none;
 }
 .contact-section form input::-moz-placeholder, .contact-section form textarea::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.50);
+    color: #9C1112;
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
@@ -62,7 +64,7 @@
 }
 .contact-section form input::placeholder,
 .contact-section form textarea::placeholder{
-    color: rgba(0, 0, 0, 0.50);
+    color: #9C1112;
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
@@ -72,8 +74,8 @@
 .contact-section form button {
     justify-content: center;
     gap: 10px;
-
+color:#9C1112;
     border-radius: 25px;
     background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(156, 17, 18, 0.58);
 }

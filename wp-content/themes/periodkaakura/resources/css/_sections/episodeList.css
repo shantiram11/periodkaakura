@@ -90,7 +90,7 @@
 .section-episode-list .latest-episodes {
     border-radius: 48px;
     border: 1px solid #000;
-    background: #1D1D1D;
+    background: #9C1112;
     backdrop-filter: blur(25px);
     padding: 40px 60px;
 }
@@ -105,7 +105,7 @@
 }
 
 .latest-episodes .episode-name {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgb(255 255 255 / 87%);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;

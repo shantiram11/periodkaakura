@@ -12,7 +12,7 @@
                         <span class="team-name ">
                             Priyanka Budhathoki
                         </span>
-                        <p class="tracking-tight dark:text-gray-500 md:text-base text-gray-400 mt-4 text-justify">
+                        <p class="tracking-tight dark:text-gray-500 md:text-base text-white mt-4 text-justify">
                             Priyanka Budhathoki is a development communication professional for over ten years. Priyanka
                             began her journalism career through radio and has produced dozens of radio talk shows and
                             magazines. Years of friendship and sisterhood with Shristi resulted in bringing out the
@@ -27,7 +27,7 @@
                         <span class="team-name">
                             Shristi Kafle
                         </span>
-                        <p class="tracking-tight dark:text-gray-500 md:text-base text-gray-400 mt-4 text-justify">
+                        <p class="tracking-tight dark:text-gray-500 md:text-base text-white mt-4 text-justify">
                             Priyanka Budhathoki is a development communication professional for over ten years.
                             Priyanka
                             began her journalism career through radio and has produced dozens of radio talk shows

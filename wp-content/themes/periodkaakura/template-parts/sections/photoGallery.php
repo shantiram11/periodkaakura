@@ -4,6 +4,18 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        position: relative;
+    }
+    .photo-gallery::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+        /*background-blend-mode: multiply;*/
+        z-index: -10;
     }
 </style>
 <section class="section-photo-gallery ">

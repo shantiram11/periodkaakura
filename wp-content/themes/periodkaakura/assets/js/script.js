@@ -22,15 +22,15 @@ jQuery(document).ready(function($) {
             }
         }
     });
+
 });
-// $(document).ready(function(){
-//     $("#customers-testimonials").owlCarousel({
-//         items: 1,
-//         loop: true,
-//         autoplay: true,
-//         autoplayTimeout: 5000,
-//         autoplayHoverPause: true,
-//         nav: false,
-//         dots: true
-//     });
-// });
+jQuery(document).ready(function(){
+    const photoGallery = document.querySelector('.photo-gallery');
+
+// Get the computed background image URL
+    const backgroundImage = getComputedStyle(photoGallery).backgroundImage;
+
+// Apply reddish tint effect
+    photoGallery.style.filter = 'sepia(100%) hue-rotate(263deg) saturate(2)';
+    photoGallery.style.backgroundImage = backgroundImage;
+});
