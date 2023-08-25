@@ -2,7 +2,7 @@
     <div class="container">
         <h3 class="mt-20 text-3xl text-black font-bold mb-12">Testimonials</h3>
         <div id="customers-testimonials" class="owl-carousel">
-            <div class="testimonial flex flex-col items-center justify-between">
+            <div class="testimonial min-h-[350px] flex flex-col items-center justify-between">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/temp/priyankabudhathoki.png' ?>">
                 <h3 class="name">
                     Shristi Karki
@@ -15,7 +15,7 @@
                     discrimination during period. For that, we aim to continue producing more podcast episodes
                     in the coming days raising awareness on menstrual health and hygiene. </p>
             </div>
-            <div class="testimonial flex flex-col items-center justify-between">
+            <div class="testimonial min-h-[350px] flex flex-col items-center justify-between">
                 <img class="w-[75px]"
                      src="<?php echo get_template_directory_uri() . '/assets/img/temp/gyanmaharjan.png' ?>">
                 <h3 class="name">
@@ -30,7 +30,7 @@
                     in the coming days raising awareness on menstrual health and hygiene. </p>
             </div>
 
-            <div class="testimonial flex flex-col items-center justify-between">
+            <div class="testimonial min-h-[350px] flex flex-col items-center justify-between">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/temp/gyanmaharjan.png' ?>">
                 <h3 class="name">
                     Gyan Maharjan

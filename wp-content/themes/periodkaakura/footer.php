@@ -51,11 +51,14 @@
 
             <!--Copyright section-->
             <div
-                    class="bg-[#9c111200] p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
-                © <?php echo date('Y'); ?> Copyright:
-                <a class="dark:text-neutral-400" href="https://tailwind-elements.com/"
-                >PeriodKaaKura</a
+                    class="bg-[#9c111200] flex justify-around gap-10 p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200">
+                <a class="font-semibold" href="tel:980000000">Want to call? : Click Here <i class="fa-solid fa-phone"></i></a>
+
+                <a class=" font-semibold dark:text-neutral-400"
+                >     © <?php echo date('Y'); ?> Copyright: PeriodKaaKura</a
                 >
+          <a class="font-semibold" href="https://tailwind-elements.com/">PeriodKaaKura@gmail.com <i class="fa-regular fa-envelope"></i>
+          </a>
             </div>
     </div>
 </footer><!-- #colophon -->

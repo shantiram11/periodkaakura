@@ -27,10 +27,12 @@ function periodkaakura_scripts()
 
     wp_register_script('periodkaakura-script', $uri . '/assets/js/script.js', ['jquery'], $ver, true);
     wp_register_script('owl-carousel-script', $uri . '/assets/js/owl.carousel.js', ['jquery'], $ver, true);
+    wp_register_script('jquery-equal-height', $uri . '/assets/js/jquery.matchHeight-min.js', ['jquery'], $ver, true);
 
 
     wp_enqueue_script("owl-carousel-script");
     wp_enqueue_script("periodkaakura-script");
+    wp_enqueue_script("jquery-equal-height");
 
 
     wp_enqueue_script('periodkaakura-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true);

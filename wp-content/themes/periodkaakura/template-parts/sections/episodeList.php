@@ -15,10 +15,10 @@
                         <path d="M2 2L9.5 10L17 2" stroke="black" stroke-opacity="0.5" stroke-width="3"/>
                     </svg>
                 </div>
-                <ul class="select-options">
-                    <li>Option 1</li>
-                    <li>Option 2</li>
-                    <li>Option 3</li>
+                <ul class="select-options rounded-xl">
+                    <li>All Epsiodes</li>
+                    <li>Latest Epsiodes</li>
+                    <li>Hit Epsiodes</li>
                     <!-- Add more options as needed -->
                 </ul>
             </div>
@@ -127,24 +127,3 @@
         </div>
     </div>
 </section>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const selectWrapper = document.querySelector('.select-wrapper');
-
-        selectWrapper.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
-
-        const options = document.querySelectorAll('.select-options li');
-
-        options.forEach(option => {
-            option.addEventListener('click', function () {
-                const selectedText = this.textContent;
-                const header = selectWrapper.querySelector('.select-header');
-                header.textContent = selectedText + ' ' + '▼';
-                selectWrapper.classList.remove('active');
-            });
-        });
-
-
-</script>
