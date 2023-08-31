@@ -8,6 +8,10 @@ mix
     .postCss('resources/css/_sections/teamAndContact.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/testimonials.css', 'assets/css/_sections')
     .postCss('resources/css/_sections/photoGallery.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/pkk_news.css', 'assets/css/_sections')
+    .postCss('resources/css/_sections/pkk_videos.css', 'assets/css/_sections')
+
+
     .options({
         processCssUrls: false,
         postCss: [
@@ -25,4 +29,6 @@ mix.combine([
     'assets/css/_sections/teamAndContact.css',
     'assets/css/_sections/testimonials.css',
     'assets/css/_sections/photoGallery.css',
+    'assets/css/_sections/pkk_news.css',
+    'assets/css/_sections/pkk_videos.css',
 ], 'assets/css/theme.css');

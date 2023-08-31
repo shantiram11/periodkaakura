@@ -23,14 +23,12 @@ jQuery(document).ready(function($) {
         }
     });
 
-});
-jQuery(document).ready(function(){
-    const photoGallery = document.querySelector('.photo-gallery');
-
-// Get the computed background image URL
-    const backgroundImage = getComputedStyle(photoGallery).backgroundImage;
-
-// Apply reddish tint effect
-    photoGallery.style.filter = 'sepia(100%) hue-rotate(263deg) saturate(2)';
-    photoGallery.style.backgroundImage = backgroundImage;
+        $('.news-gallery .relative').hover(
+            function() {
+                $(this).find('.news-overlay').fadeIn();
+            },
+            function() {
+                $(this).find('.news-overlay').fadeOut();
+            }
+        );
 });

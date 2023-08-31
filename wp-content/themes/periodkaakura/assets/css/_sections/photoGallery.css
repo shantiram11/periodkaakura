@@ -17,3 +17,9 @@
     background: #9C1112;
     box-shadow: 14px 21px 12px 5px rgba(156, 17, 18, 0.58);
 }
+.st-gallery .flex img{
+    border: 7px solid #9C1112
+}
+.st-gallery .flex img:hover{
+    cursor: pointer;
+}

@@ -14,6 +14,8 @@ get_header();
     <?php
     get_template_part('template-parts/sections/hero');
     get_template_part('template-parts/sections/episodeList');
+    get_template_part('template-parts/sections/pkk_news');
+    get_template_part('template-parts/sections/pkk_videos');
     get_template_part('template-parts/sections/teamAndContact');
     get_template_part('template-parts/sections/testimonials');
     get_template_part('template-parts/sections/photoGallery');

@@ -1,7 +1,7 @@
 <section class="section-testimonials mb-6">
     <div class="container">
         <h3 class="mt-20 text-3xl text-black font-bold mb-12">Testimonials</h3>
-        <div id="customers-testimonials" class="owl-carousel">
+        <div id="customers-testimonialsX" class="owl-carousel1">
             <div class="testimonial flex flex-col items-center justify-between">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/temp/priyankabudhathoki.png' ?>">
                 <h3 class="name">

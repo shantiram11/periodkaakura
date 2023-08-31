@@ -88,15 +88,16 @@
 
 /*filter select field CSS ends*/
 .section-episode-list .latest-episodes {
-    border-radius: 48px;
-    border: 1px solid #000;
-    background: #9C1112;
+    border-radius: 48.381px;
+    border: 6px solid #FFF;
+    background: #D49C4D;
+    box-shadow: 11px 6px 26px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
     padding: 40px 60px;
+    transition: 0.3s;
 }
 
 .latest-episodes .episode-count {
-    color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -105,7 +106,6 @@
 }
 
 .latest-episodes .episode-name {
-    color: rgb(255 255 255 / 87%);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -167,4 +167,41 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.latest-episodes ul li{
+    /*transition: 0.5s ease-in-out;*/
+}
+.latest-episodes ul li:hover{
+    background: #9D1212;
+    cursor: pointer;
+}
+.latest-episodes ul li ,
+.latest-episodes ul li{
+    color: #000000;
+    transition: 0.3s;
+}
+.latest-episodes,
+.latest-episodes{
+    color: #000000;
+}
+.latest-episodes ul li {
+    position: relative; /* Add position relative to the li */
+    /* Your existing styles for li here */
+}
+
+.latest-episodes ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    right: -60px;
+    height: 100%;
+    background: #9D1212;
+    opacity: 0; /* Start with no background */
+    z-index: -1; /* Place behind the content */
+    transition: opacity 0.3s; /* Transition for the background */
+}
+
+.latest-episodes ul li:hover::before {
+    opacity: 1; /* Show the background on hover */
 }

@@ -25,7 +25,7 @@
         </div>
         <div class="latest-episodes">
             <ul class="">
-                <li class="flex justify-between items-center mb-8">
+                <li class="flex justify-between items-center hover:text-white mb-8">
                     <div class="flex items-center gap-7">
                         <img class="m-auto cover-image"
                              src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
@@ -39,7 +39,49 @@
                         <span class="episode-name">Minutes</span>
                     </div>
                 </li>
-                <li class="flex justify-between items-center mb-8">
+                <li class="flex justify-between items-center hover:text-white mb-8">
+                    <div class="flex items-center gap-7">
+                        <img class="m-auto cover-image"
+                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
+                        <div>
+                            <p class="episode-count">Episode 1</p>
+                            <span class="episode-name">Episode Name Here</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <p class="episode-count hover:text-white">23:1</p>
+                        <span class="episode-name">Minutes</span>
+                    </div>
+                </li>
+                <li class="flex justify-between items-center hover:text-white mb-8">
+                    <div class="flex items-center gap-7">
+                        <img class="m-auto cover-image"
+                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
+                        <div>
+                            <p class="episode-count hover:text-white">Episode 1</p>
+                            <span class="episode-name">Episode Name Here</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <p class="episode-count hover:text-white">23:1</p>
+                        <span class="episode-name">Minutes</span>
+                    </div>
+                </li>
+                <li class="flex justify-between items-center hover:text-white mb-8">
+                    <div class="flex items-center gap-7">
+                        <img class="m-auto cover-image"
+                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
+                        <div>
+                            <p class="episode-count hover:text-white">Episode 1</p>
+                            <span class="episode-name">Episode Name Here</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <p class="episode-count">23:1</p>
+                        <span class="episode-name">Minutes</span>
+                    </div>
+                </li>
+                <li class="flex justify-between items-center hover:text-white mb-8">
                     <div class="flex items-center gap-7">
                         <img class="m-auto cover-image"
                              src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
@@ -53,49 +95,7 @@
                         <span class="episode-name">Minutes</span>
                     </div>
                 </li>
-                <li class="flex justify-between items-center mb-8">
-                    <div class="flex items-center gap-7">
-                        <img class="m-auto cover-image"
-                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
-                        <div>
-                            <p class="episode-count">Episode 1</p>
-                            <span class="episode-name">Episode Name Here</span>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 items-center">
-                        <p class="episode-count">23:1</p>
-                        <span class="episode-name">Minutes</span>
-                    </div>
-                </li>
-                <li class="flex justify-between items-center mb-8">
-                    <div class="flex items-center gap-7">
-                        <img class="m-auto cover-image"
-                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
-                        <div>
-                            <p class="episode-count">Episode 1</p>
-                            <span class="episode-name">Episode Name Here</span>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 items-center">
-                        <p class="episode-count">23:1</p>
-                        <span class="episode-name">Minutes</span>
-                    </div>
-                </li>
-                <li class="flex justify-between items-center mb-8">
-                    <div class="flex items-center gap-7">
-                        <img class="m-auto cover-image"
-                             src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
-                        <div>
-                            <p class="episode-count">Episode 1</p>
-                            <span class="episode-name">Episode Name Here</span>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 items-center">
-                        <p class="episode-count">23:1</p>
-                        <span class="episode-name">Minutes</span>
-                    </div>
-                </li>
-                <li class="flex justify-between items-center mb-8">
+                <li class="flex justify-between items-center hover:text-white mb-8">
                     <div class="flex items-center gap-7">
                         <img class="m-auto cover-image"
                              src="<?php echo get_template_directory_uri() . '/assets/img/head.png' ?>" alt="">
