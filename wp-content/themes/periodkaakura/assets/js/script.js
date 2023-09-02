@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         loop: true,
         center: true,
         items: 2,
-        margin: 20,
+        margin: 60,
         autoplay: true,
         dots:true,
         autoplayTimeout: 8500,

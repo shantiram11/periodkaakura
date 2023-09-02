@@ -22,3 +22,21 @@ body {
     padding-right: 15px;
     margin: auto;
 }
+footer ul h3 {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+footer ul li{
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}

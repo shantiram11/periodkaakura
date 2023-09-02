@@ -568,6 +568,9 @@ video {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -579,9 +582,6 @@ video {
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 .mt-\[60px\] {
   margin-top: 60px;
@@ -643,8 +643,8 @@ video {
 .max-h-\[150px\] {
   max-height: 150px;
 }
-.w-full {
-  width: 100%;
+.w-\[96px\] {
+  width: 96px;
 }
 .w-\[53px\] {
   width: 53px;
@@ -652,14 +652,14 @@ video {
 .w-\[60\%\] {
   width: 60%;
 }
+.w-full {
+  width: 100%;
+}
 .w-9 {
   width: 2.25rem;
 }
 .w-\[180px\] {
   width: 180px;
-}
-.w-\[75px\] {
-  width: 75px;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -684,9 +684,6 @@ video {
 }
 .justify-start {
   justify-content: flex-start;
-}
-.justify-center {
-  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -736,8 +733,14 @@ video {
 .gap-8 {
   gap: 2rem;
 }
+.gap-\[60px\] {
+  gap: 60px;
+}
 .overflow-x-visible {
   overflow-x: visible;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .rounded-md {
   border-radius: 0.375rem;
@@ -780,6 +783,17 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.p-8 {
+  padding: 2rem;
+}
+.py-\[45px\] {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -808,9 +822,9 @@ video {
   padding-left: 20px;
   padding-right: 20px;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -826,6 +840,9 @@ video {
 }
 .pb-\[30px\] {
   padding-bottom: 30px;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .text-center {
   text-align: center;
@@ -856,6 +873,10 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-semibold {
   font-weight: 600;
@@ -899,9 +920,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(156 17 18 / var(--tw-text-opacity));
 }
-.text-blue-800 {
+.text-\[\#9C1112\] {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+  color: rgb(156 17 18 / var(--tw-text-opacity));
+}
+.text-\[\#29CC97\] {
+  --tw-text-opacity: 1;
+  color: rgb(41 204 151 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -929,6 +954,24 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+}
+footer ul h3 {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+footer ul li{
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
 }
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
@@ -963,14 +1006,30 @@ body {
 }
 @media (min-width: 480px) {
 
+  .sm\:m-1 {
+    margin: 0.25rem;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:w-\[40\%\] {
+    width: 40%;
   }
 }
 @media (min-width: 768px) {
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid {
     display: grid;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -988,8 +1047,8 @@ body {
     margin-bottom: 0px;
   }
 
-  .lg\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {
@@ -997,8 +1056,11 @@ body {
   }
 }
 
-
-
+@media screen and (max-width:498px) {
+    #masthead{
+        display: none;
+    }
+}
 #nav{
     z-index: 100;
     position: fixed;
@@ -1315,22 +1377,25 @@ width: 100%;
 }
 
 
-.section-team-and-contact .container .grid{
+.section-team-and-contact .container .grid {
     grid-template-columns: 58% 38%;
     grid-gap: 4%;
 }
-.title{
+
+.title {
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
 .section-team-and-contact .subtitle,
-.section-team-and-contact .title{
+.section-team-and-contact .title {
     color: #FFF;
 }
- .subtitle{
+
+.subtitle {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -1338,7 +1403,7 @@ width: 100%;
     line-height: normal;
 }
 
-.team-name{
+.team-name {
     color: rgba(255, 255, 255, 0.78);
     font-family: Montserrat;
     font-size: 18px;
@@ -1346,7 +1411,8 @@ width: 100%;
     font-weight: 700;
     line-height: normal;
 }
-.team-description{
+
+.team-description {
     color: #FFF;
     text-align: justify;
     font-family: Montserrat;
@@ -1355,56 +1421,107 @@ width: 100%;
     font-weight: 400;
     line-height: normal;
 }
-.team-section{
+
+.team-section {
     margin-left: -3vw;
     padding-left: 3vw;
     background: #9C1112;
     box-shadow: 8px 22px 17px 14px rgba(156, 17, 18, 0.58);
 }
-.contact-section form input,
-.contact-section form textarea
-{
-    font: Montserrat "Helvetica Neue";
-    color: #9C1112;
-    box-shadow:5px 6px 6px 0px rgba(156, 17, 18, 0.58);
-    border-radius: 10px;
-    width: 80%;
+
+.contact-section .form {
+
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: #9D1212;
+    box-shadow: -6px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+
+    padding: 50px;
 }
+.contact-section form,
+.contact-section form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-section form input {
+    font: Montserrat "Helvetica Neue";
+    color: white;
+    box-shadow: 5px 6px 6px 0px rgba(156, 17, 18, 0.58);
+    border-radius: 10px;
+    background: #9C1112;
+    border-bottom: 1px solid #E35E5E;
+}
+
 .contact-section form input:focus,
-.contact-section form textarea:focus{
+.contact-section form textarea:focus {
     outline: none;
 }
-.contact-section form input::-moz-placeholder, .contact-section form textarea::-moz-placeholder{
-    color: #9C1112;
+
+.contact-section form textarea {
+    border-radius: 15px;
+    /*opacity: 0.25;*/
+    color: white;
+background: linear-gradient(0deg, rgb(112 10 10 / 80%) 0%, rgb(139 40 40 / 72%) 100%), #9d1212;
+}
+
+.contact-section form input::-moz-placeholder {
+    color: #E35E5E;
+    text-align: justify;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.contact-section form input::placeholder,
-.contact-section form textarea::placeholder{
-    color: #9C1112;
+
+.contact-section form input::placeholder {
+    color: #E35E5E;
+    text-align: justify;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.contact-section form button {
+
+.contact-section form textarea::-moz-placeholder {
+    color:  #E35E5E;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-section form textarea::placeholder {
+    color:  #E35E5E;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-section button {
     justify-content: center;
+    align-items: center;
     gap: 10px;
-color:#9C1112;
+    color: #fff;
+    height: 46px;
     border-radius: 25px;
-    background: #FFF;
+    background: #9C1112;
     box-shadow: 0px 4px 4px 0px rgba(156, 17, 18, 0.58);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
-.contact-section {
-    background-color: #9C1112;
-    padding: 10px;
-    /*margin: 50px 15px;*/
-}
-.icon-wrapper{
+
+.icon-wrapper {
     width: 30px;
     height: 30px;
     background: wheat;
@@ -1414,71 +1531,85 @@ color:#9C1112;
 
 }
 
+.contact-section form label {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 .testimonial {
     border-radius: 25px;
-    background: #FFF;
+    /*background: #FFF;*/
     box-shadow: 0px 4px 4px 0px #9C1112;
-    padding: 56px 45px;
+    height: 100%;
 }
 
- .section-testimonials .testimonial img {
-    width: 75px;
-    height: 75px;
+.section-testimonials .testimonial img {
     flex-shrink: 0;
-    border-radius: 75px;
 }
+
 .section-testimonials .owl-carousel .owl-item img {
     display: block;
-    width: 75px;
 }
 
 .testimonial .name {
-    color: #000;
-    text-align: justify;
+    color: #ffffff;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
 .testimonial .position {
-    color: rgba(156, 17, 18, 0.50);
-    text-align: justify;
+    color: #ffffff;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .testimonial .description {
-    color: #000;
-    text-align: justify;
-    font-family: Montserrat;
-    font-size: 12px;
+    color: #F99;
+    text-align: center;
+    font-family: Sen;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
 }
-.owl-carousel .owl-stage{display: flex;}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
 .article-items {
     display: flex;
     flex: 1 0 auto;
     height: 100%;
 }
+
 .aticle-box {
     position: relative;
     overflow: hidden;
-     margin-bottom: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
-#customers-testimonials.owl-carousel .owl-stage-outer{
+
+#customers-testimonials.owl-carousel .owl-stage-outer {
     overflow: unset;
+}
+
+.testimonial {
+    background: #9D1212;
 }
 
 .gallery-buttons a{
@@ -1500,7 +1631,7 @@ color:#9C1112;
     background: #9C1112;
     box-shadow: 14px 21px 12px 5px rgba(156, 17, 18, 0.58);
 }
-.st-gallery .flex img{
+.st-gallery .grid img{
     border: 7px solid #9C1112
 }
 .st-gallery .flex img:hover{

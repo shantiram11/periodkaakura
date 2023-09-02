@@ -1,19 +1,22 @@
-.section-team-and-contact .container .grid{
+.section-team-and-contact .container .grid {
     grid-template-columns: 58% 38%;
     grid-gap: 4%;
 }
-.title{
+
+.title {
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
 .section-team-and-contact .subtitle,
-.section-team-and-contact .title{
+.section-team-and-contact .title {
     color: #FFF;
 }
- .subtitle{
+
+.subtitle {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -21,7 +24,7 @@
     line-height: normal;
 }
 
-.team-name{
+.team-name {
     color: rgba(255, 255, 255, 0.78);
     font-family: Montserrat;
     font-size: 18px;
@@ -29,7 +32,8 @@
     font-weight: 700;
     line-height: normal;
 }
-.team-description{
+
+.team-description {
     color: #FFF;
     text-align: justify;
     font-family: Montserrat;
@@ -38,48 +42,85 @@
     font-weight: 400;
     line-height: normal;
 }
-.team-section{
+
+.team-section {
     margin-left: -3vw;
     padding-left: 3vw;
     background: #9C1112;
     box-shadow: 8px 22px 17px 14px rgba(156, 17, 18, 0.58);
 }
-.contact-section form input,
-.contact-section form textarea
-{
-    font: Montserrat "Helvetica Neue";
-    color: #9C1112;
-    box-shadow:5px 6px 6px 0px rgba(156, 17, 18, 0.58);
-    border-radius: 10px;
-    width: 80%;
+
+.contact-section .form {
+
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: #9D1212;
+    box-shadow: -6px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+
+    padding: 50px;
 }
+.contact-section form,
+.contact-section form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-section form input {
+    font: Montserrat "Helvetica Neue";
+    color: white;
+    box-shadow: 5px 6px 6px 0px rgba(156, 17, 18, 0.58);
+    border-radius: 10px;
+    background: #9C1112;
+    border-bottom: 1px solid #E35E5E;
+}
+
 .contact-section form input:focus,
-.contact-section form textarea:focus{
+.contact-section form textarea:focus {
     outline: none;
 }
-.contact-section form input::placeholder,
-.contact-section form textarea::placeholder{
-    color: #9C1112;
+
+.contact-section form textarea {
+    border-radius: 15px;
+    /*opacity: 0.25;*/
+    color: white;
+background: linear-gradient(0deg, rgb(112 10 10 / 80%) 0%, rgb(139 40 40 / 72%) 100%), #9d1212;
+}
+
+.contact-section form input::placeholder {
+    color: #E35E5E;
+    text-align: justify;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.contact-section form button {
+
+.contact-section form textarea::placeholder {
+    color:  #E35E5E;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-section button {
     justify-content: center;
+    align-items: center;
     gap: 10px;
-color:#9C1112;
+    color: #fff;
+    height: 46px;
     border-radius: 25px;
-    background: #FFF;
+    background: #9C1112;
     box-shadow: 0px 4px 4px 0px rgba(156, 17, 18, 0.58);
+    width: fit-content;
 }
-.contact-section {
-    background-color: #9C1112;
-    padding: 10px;
-    /*margin: 50px 15px;*/
-}
-.icon-wrapper{
+
+.icon-wrapper {
     width: 30px;
     height: 30px;
     background: wheat;
@@ -87,4 +128,14 @@ color:#9C1112;
     place-items: center;
     border-radius: 15px;
 
+}
+
+.contact-section form label {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

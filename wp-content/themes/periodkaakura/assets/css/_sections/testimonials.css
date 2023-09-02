@@ -1,66 +1,70 @@
 
-
 .testimonial {
     border-radius: 25px;
-    background: #FFF;
+    /*background: #FFF;*/
     box-shadow: 0px 4px 4px 0px #9C1112;
-    padding: 56px 45px;
+    height: 100%;
 }
 
- .section-testimonials .testimonial img {
-    width: 75px;
-    height: 75px;
+.section-testimonials .testimonial img {
     flex-shrink: 0;
-    border-radius: 75px;
 }
+
 .section-testimonials .owl-carousel .owl-item img {
     display: block;
-    width: 75px;
 }
 
 .testimonial .name {
-    color: #000;
-    text-align: justify;
+    color: #ffffff;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
 .testimonial .position {
-    color: rgba(156, 17, 18, 0.50);
-    text-align: justify;
+    color: #ffffff;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .testimonial .description {
-    color: #000;
-    text-align: justify;
-    font-family: Montserrat;
-    font-size: 12px;
+    color: #F99;
+    text-align: center;
+    font-family: Sen;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
 }
-.owl-carousel .owl-stage{display: flex;}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
 .article-items {
     display: flex;
     flex: 1 0 auto;
     height: 100%;
 }
+
 .aticle-box {
     position: relative;
     overflow: hidden;
-     margin-bottom: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
-#customers-testimonials.owl-carousel .owl-stage-outer{
+
+#customers-testimonials.owl-carousel .owl-stage-outer {
     overflow: unset;
+}
+
+.testimonial {
+    background: #9D1212;
 }

@@ -44,7 +44,7 @@
     </div>
     <div class="st-gallery bg-[#D49C4D] py-[60px]">
         <div class="container ">
-            <div class="gap-[54px] flex justify-center">
+            <div class="gap-[54px] grid md:grid-cols-3 lg:grid-cols-4">
                 <div class="">
                     <img
                             src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"

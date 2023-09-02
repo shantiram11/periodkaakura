@@ -1,4 +1,8 @@
-
+@media screen and (max-width:498px) {
+    #masthead{
+        display: none;
+    }
+}
 #nav{
     z-index: 100;
     position: fixed;
