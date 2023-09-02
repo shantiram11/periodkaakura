@@ -1,6 +1,9 @@
-.hero-section{
-    padding-top: 60px;
+@media screen and (min-width:768px) {
+    .hero-section{
+        padding-top: 60px;
+    }
 }
+
 .hero-section .hero-left h2{
     margin-top: 100px;
     font-family: montserrat, sans-serif;
@@ -68,15 +71,33 @@
     font-weight: 600;
     line-height: normal;
 }
-.hero-section .single-audio-player .wp-block-presto-player-reusable-edit{
-    width: 100%;
+/*.hero-section .single-audio-player .wp-block-presto-player-reusable-edit{*/
+/*    width: 100%;*/
+/*}*/
+/*.hero-section .single-audio-player .wp-block-presto-player-reusable-edit figure{*/
+/*    color: #9C1112;*/
+/*    --plyr-audio-controls-background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.50) 100%) !important;*/
+/*    backdrop-filter: blur(25px);*/
+/*}*/
+/*.hero-section .single-audio-player .presto-audio__poster-wrapper .presto-audio__large-play-button{*/
+/*    background-color:#8DFF65 !important;*/
+/*    color:  #00000080;*/
+/*}*/
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
 }
-.hero-section .single-audio-player .wp-block-presto-player-reusable-edit figure{
-    color: #9C1112;
-    --plyr-audio-controls-background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.50) 100%) !important;
-    backdrop-filter: blur(25px);
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
-.hero-section .single-audio-player .presto-audio__poster-wrapper .presto-audio__large-play-button{
-    background-color:#8DFF65 !important;
-    color:  #00000080;
+.hero-section .owl-carousel .owl-stage-outer {
+    position: relative;
+    margin-left: -8vw !important;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
 }

@@ -619,6 +619,18 @@ video {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.ml-\[-20\%\] {
+  margin-left: -20%;
+}
+.ml-\[-18\%\] {
+  margin-left: -18%;
+}
+.ml-\[-38\%\] {
+  margin-left: -38%;
+}
+.mt-\[50px\] {
+  margin-top: 50px;
+}
 .flex {
   display: flex;
 }
@@ -736,6 +748,9 @@ video {
 .gap-\[60px\] {
   gap: 60px;
 }
+.gap-\[1\%\] {
+  gap: 1%;
+}
 .overflow-x-visible {
   overflow-x: visible;
 }
@@ -751,9 +766,6 @@ video {
 .bg-\[\#9C1112\] {
   --tw-bg-opacity: 1;
   background-color: rgb(156 17 18 / var(--tw-bg-opacity));
-}
-.bg-\[\#9c111200\] {
-  background-color: #9c111200;
 }
 .bg-\[\#D49C4D\] {
   --tw-bg-opacity: 1;
@@ -773,9 +785,6 @@ video {
 }
 .p-6 {
   padding: 1.5rem;
-}
-.p-4 {
-  padding: 1rem;
 }
 .p-1 {
   padding: 0.25rem;
@@ -826,6 +835,9 @@ video {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -841,14 +853,15 @@ video {
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
-.pb-4 {
-  padding-bottom: 1rem;
-}
 .text-center {
   text-align: center;
 }
 .text-justify {
   text-align: justify;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -874,15 +887,11 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-bold {
+  font-weight: 700;
 }
 .font-semibold {
   font-weight: 600;
-}
-.font-bold {
-  font-weight: 700;
 }
 .font-extrabold {
   font-weight: 800;
@@ -899,6 +908,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#29CC97\] {
+  --tw-text-opacity: 1;
+  color: rgb(41 204 151 / var(--tw-text-opacity));
 }
 .text-red-700 {
   --tw-text-opacity: 1;
@@ -923,10 +936,6 @@ video {
 .text-\[\#9C1112\] {
   --tw-text-opacity: 1;
   color: rgb(156 17 18 / var(--tw-text-opacity));
-}
-.text-\[\#29CC97\] {
-  --tw-text-opacity: 1;
-  color: rgb(41 204 151 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -994,11 +1003,6 @@ footer ul li{
     color: rgb(229 229 229 / var(--tw-text-opacity));
   }
 
-  .dark\:text-neutral-400 {
-    --tw-text-opacity: 1;
-    color: rgb(163 163 163 / var(--tw-text-opacity));
-  }
-
   .dark\:text-gray-500 {
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1010,6 +1014,10 @@ footer ul li{
     margin: 0.25rem;
   }
 
+  .sm\:ml-\[-20\%\] {
+    margin-left: -20%;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1019,6 +1027,14 @@ footer ul li{
   }
 }
 @media (min-width: 768px) {
+
+  .md\:ml-\[-20\%\] {
+    margin-left: -20%;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
 
   .md\:flex {
     display: flex;
@@ -1081,9 +1097,12 @@ width: 100%;
     color: #9C1112B2;
 }
 
-.hero-section{
-    padding-top: 60px;
+@media screen and (min-width:768px) {
+    .hero-section{
+        padding-top: 60px;
+    }
 }
+
 .hero-section .hero-left h2{
     margin-top: 100px;
     font-family: montserrat, sans-serif;
@@ -1151,20 +1170,36 @@ width: 100%;
     font-weight: 600;
     line-height: normal;
 }
-.hero-section .single-audio-player .wp-block-presto-player-reusable-edit{
-    width: 100%;
+/*.hero-section .single-audio-player .wp-block-presto-player-reusable-edit{*/
+/*    width: 100%;*/
+/*}*/
+/*.hero-section .single-audio-player .wp-block-presto-player-reusable-edit figure{*/
+/*    color: #9C1112;*/
+/*    --plyr-audio-controls-background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.50) 100%) !important;*/
+/*    backdrop-filter: blur(25px);*/
+/*}*/
+/*.hero-section .single-audio-player .presto-audio__poster-wrapper .presto-audio__large-play-button{*/
+/*    background-color:#8DFF65 !important;*/
+/*    color:  #00000080;*/
+/*}*/
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
 }
-.hero-section .single-audio-player .wp-block-presto-player-reusable-edit figure{
-    color: #9C1112;
-    --plyr-audio-controls-background: linear-gradient(180deg, #CACACA 9.38%, rgba(0, 0, 0, 0.50) 100%) !important;
-    -webkit-backdrop-filter: blur(25px);
-            backdrop-filter: blur(25px);
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
-.hero-section .single-audio-player .presto-audio__poster-wrapper .presto-audio__large-play-button{
-    background-color:#8DFF65 !important;
-    color:  #00000080;
+.hero-section .owl-carousel .owl-stage-outer {
+    position: relative;
+    margin-left: -8vw !important;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
 }
-
 
 .section-episode-list .title {
     color: #121212;
@@ -1262,7 +1297,7 @@ width: 100%;
     box-shadow: 11px 6px 26px 0px rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur(25px);
             backdrop-filter: blur(25px);
-    padding: 40px 60px;
+    padding: 40px 40px;
     transition: 0.3s;
 }
 
@@ -1359,21 +1394,27 @@ width: 100%;
     /* Your existing styles for li here */
 }
 
-.latest-episodes ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -60px;
-    right: -60px;
-    height: 100%;
-    background: #9D1212;
-    opacity: 0; /* Start with no background */
-    z-index: -1; /* Place behind the content */
-    transition: opacity 0.3s; /* Transition for the background */
-}
+/*.latest-episodes ul li::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: -60px;*/
+/*    right: -60px;*/
+/*    height: 100%;*/
+/*    background: #9D1212;*/
+/*    opacity: 0; !* Start with no background *!*/
+/*    z-index: -1; !* Place behind the content *!*/
+/*    transition: opacity 0.3s; !* Transition for the background *!*/
+/*}*/
 
 .latest-episodes ul li:hover::before {
     opacity: 1; /* Show the background on hover */
+}
+@media screen and  (min-width: 768px) {
+    .latest-episodes iframe{
+        width: 100%;
+        height: 150px;
+    }
 }
 
 
@@ -1540,6 +1581,9 @@ background: linear-gradient(0deg, rgb(112 10 10 / 80%) 0%, rgb(139 40 40 / 72%) 
     font-weight: 700;
     line-height: normal;
 }
+.contact-section .wpcf7-not-valid-tip{
+    color: yellowgreen;
+}
 
 
 .testimonial {
@@ -1659,4 +1703,7 @@ background: linear-gradient(0deg, rgb(112 10 10 / 80%) 0%, rgb(139 40 40 / 72%) 
 }
 
 
-
+.pkk-videos iframe{
+    width: 100%;
+    padding: 10px;
+}

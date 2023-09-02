@@ -34,7 +34,7 @@
                 reprehenderit
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat “
             </p>
-            <div class="flex gap-14 gallery-buttons mb-[120px]">
+            <div class="flex flex-wrap gap-14 gallery-buttons mb-[120px]">
                 <a class="text-white" href="#">test</a>
                 <a class="text-white" href="#">test</a>
                 <a class="text-white" href="#">test</a>

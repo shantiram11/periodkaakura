@@ -9,7 +9,7 @@
                      alt="">
 
                 <div>
-                    <div class="flex justify-start items-center gap-9">
+                    <div class="md:flex justify-start items-center gap-9">
                         <span class="team-name ">
                             Priyanka Budhathoki
                         </span>
@@ -75,7 +75,7 @@
                      alt="">
 
                 <div>
-                    <div class="flex justify-start items-center gap-9">
+                    <div class="md:flex justify-start items-center gap-9">
                         <span class="team-name ">
                             Priyanka Budhathoki
                         </span>
@@ -164,7 +164,7 @@
 
             </div>
             <div class="submit-form mt-10 sm:flex items-center justify-between">
-                <button class="px-8  text-black flex" type="submit"> <!-- Adjust the margin here -->
+                <button id="customSubmitButton" class="px-8  text-black flex" type="submit"> <!-- Adjust the margin here -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                         <g clip-path="url(#clip0_1536_140)">
                             <path d="M15.5834 1.41663L7.79169 9.20829" stroke="#2F7D40" stroke-width="2"

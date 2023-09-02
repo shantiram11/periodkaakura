@@ -31,4 +31,25 @@ jQuery(document).ready(function($) {
                 $(this).find('.news-overlay').fadeOut();
             }
         );
+    $("#customSubmitButton").on("click", function () {
+        // Trigger the form submission
+        $(".contact-section form").submit();
+    });
+    $('#hero-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
 });
