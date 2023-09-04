@@ -4,7 +4,7 @@
             <!--                <div class="bg-black absolute top-0 left-0 h-full w-full" style="z-index: -1;"></div>-->
             <p class="title">Meet the team</p>
             <span class="subtitle">Creators and Host</span>
-            <div class="flex gap-8 mt-10">
+            <div class="md:flex gap-8 mt-10 mb-2 md:mb-0">
                 <img class="w-[180px]" src="<?php echo get_template_directory_uri() . '/assets/img/temp/host.svg' ?>"
                      alt="">
 
@@ -70,7 +70,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex gap-8 mt-10">
+            <div class="md:flex gap-8 mt-10 mb-2 md:mb-0">
                 <img class="w-[180px]" src="<?php echo get_template_directory_uri() . '/assets/img/temp/host.svg' ?>"
                      alt="">
 

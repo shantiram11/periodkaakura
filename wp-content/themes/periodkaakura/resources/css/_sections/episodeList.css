@@ -113,53 +113,6 @@
     line-height: normal;
 }
 
-/*custom audio player*/
-
-#custom-audio-container #custom-audio-player {
-    width: 100%;
-    height: 80px;
-    padding-bottom: 10px;
-}
-#progress-bar-container {
-    width: 40%;
-    height: 20px;
-    background: #ddd;
-    position: relative;
-    margin: 10px auto;
-}
-
-#progress-bar {
-    width: 0;
-    height: 100%;
-    background: linear-gradient(271deg, #B9FFA0 0%, #35CB00 100%);
-}
-#progress-bar-container span{
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 13.908px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-#volume-control {
-    -webkit-appearance: none; /* Remove default styles on some browsers */
-    appearance: none;
-    width: 100%;
-    height: 10px; /* Adjust as needed */
-    background-color: white;
-    border-radius: 5px;
-    outline: none; /* Remove focus outline */
-}
-
-#volume-control::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove default thumb styles on some browsers */
-    appearance: none;
-    width: 15px; /* Adjust thumb width */
-    height: 15px; /* Adjust thumb height */
-    background-color: #333; /* Thumb color */
-    border-radius: 50%; /* Make thumb round */
-    cursor: pointer;
-}
 .prev-and-next-btn a {
     color: rgba(255, 255, 255, 0.54);
     font-family: Montserrat;
@@ -171,7 +124,7 @@
 .latest-episodes ul li{
     /*transition: 0.5s ease-in-out;*/
 }
-.latest-episodes ul li:hover{
+.latest-episodes .wrapper li:hover{
     background: #9D1212;
     cursor: pointer;
 }
@@ -210,4 +163,13 @@
         width: 100%;
         height: 150px;
     }
+}
+@media screen and  (max-width: 767px) {
+    .latest-episodes iframe{
+        width: 100%;
+        height: 100px;
+    }
+}
+.section-episode-list #pagination{
+    margin: auto !important;
 }

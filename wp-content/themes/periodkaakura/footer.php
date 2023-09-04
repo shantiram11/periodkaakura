@@ -94,6 +94,7 @@
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
 
 <?php wp_footer(); ?>
 
