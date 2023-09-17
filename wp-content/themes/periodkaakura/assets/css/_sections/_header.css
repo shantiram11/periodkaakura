@@ -1,24 +1,194 @@
-@media screen and (max-width:498px) {
-    #masthead{
-        display: none;
+
+/*=============================================================================*/
+/*=============================================================================*/
+header.fixed{
+    box-shadow: 0 3px 4px -4px rgb(0 0 0 / 30%);
+}
+header .header-content{
+    height: 65px;
+}
+.site-branding img{
+    height: 45px;
+    max-width: 210px;
+}
+.menu-primary-menu-container{
+    height: 100%;
+    display: flex;
+}
+li.menu-item{
+    color: rgba(156, 17, 18, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: ease 3ms;
+}
+
+li.menu-item > a{
+    position: relative;
+    transition: all 0.4s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+li.menu-item:hover > a,
+li.current-menu-item > a{
+    border-bottom: 2px solid#9D1212;
+    color: #9C1112;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.menu-item-has-children > a:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+@media (min-width: 768px) {
+    header .header-content{
+        height: 80px;
+    }
+    .site-branding img{
+        height: 60px;
     }
 }
-#nav{
-    z-index: 100;
+
+@media (min-width: 992px) and  (max-width: 1200px){
+    #site-navigation{
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .site-branding img{
+        max-width: unset;
+    }
+}
+/*****/
+li.menu-item:hover .sub-menu-container{
+    display: block;
+}
+.sub-menu-container{
+    position: absolute;
+    left: 0;
+    top: 111px;
+    right: 0;
+    background: #F8FCFE;
+    display: none;
+    padding-top: 37px;
+    padding-bottom: 51px;
+}
+.sub-menu-container .sub-menu{
+    display: grid;
+    gap: 41px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sub-menu-container li>a{
+    width: 100%;
+}
+.sub-menu-container h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #9D1212;
+    margin-bottom: 47px;
+}
+.sub-menu-container .sub-menu-image{
+    height: 269px;
+}
+.sub-menu-container .post-title-box{
+    margin-top: 19px;
+}
+.sub-menu-container h4.post-title{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #9D1212;
+}
+
+
+/*** Mobile menu ****/
+
+.mobile-navigation{
+    display: none;
     position: fixed;
-    background: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-width: 100%;
+    background: #F8FCFE;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
 }
-#nav ul{
+
+@media (min-width: 768px) {
+    .mobile-navigation{
+        top: 110px;
+    }
+}
+
+
+.mobile-navigation .menu-primary-menu-container{
+    height: unset;
+    display: unset;
+}
+
+.mobile-navigation .mob-navigation{
+    color:#9D1212;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 80px;
 }
-#nav ul li{
-    text-decoration: none;
-    list-style-type: none;
-    padding: 20px;
-    color: #9C1112B2;
+
+.mob-navigation li.menu-item{
+    flex-direction: column;
 }
+
+.mob-navigation li.menu-item:hover .sub-menu-container{
+    display: none;
+}
+
+.mob-navigation .sub-menu-container{
+    position: initial;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: none;
+}
+
+.mob-navigation .sub-menu-container .post-title-box{
+    justify-content: center;
+}
+
+.mob-navigation .sub-menu-container .sub-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.mob-navigation .sub-menu-container .sub-menu .post-title{
+    color:#9D1212;
+    font-weight: 500;
+}
+
+.mob-navigation .sub-menu-container h2,
+.mob-navigation .sub-menu-container .sub-menu-image,
+.mob-navigation .sub-menu-container .right-arrow{
+    display: none;
+}
+
+.mob-navigation li a{
+    font-weight: bold;
+    font-size: 24px;
+}
+

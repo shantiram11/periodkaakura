@@ -6,7 +6,7 @@ $episodes = get_post_meta($post_id, 'section_episode_repeat_group', true);
 
 ?>
 
-<section class="section-episode-list  mt-6 mb-20">
+<section class="section-episode-list  mt-6 mb-20" id="episode">
     <div class="container">
         <div class="flex flex-wrap items-center justify-between mb-10">
             <div>

@@ -9,6 +9,16 @@
  * @package periodkaakura
  */
 
+
+$youtube = nl2br(htmlspecialchars_decode(get_option('pkk_youtube_url')));
+$spotify = nl2br(htmlspecialchars_decode(get_option('pkk_spotify')));
+$email = nl2br(htmlspecialchars_decode(get_option('pkk_email')));
+$contact = nl2br(htmlspecialchars_decode(get_option('pkk_contact_number')));
+$facebook = nl2br(htmlspecialchars_decode(get_option('pkk_facebook_url')));
+$instagram = nl2br(htmlspecialchars_decode(get_option('pkk_instagram_url')));
+$twitter = nl2br(htmlspecialchars_decode(get_option('pkk_twitter')));
+$sound_cloud = nl2br(htmlspecialchars_decode(get_option('pkk_sound_cloud')));
+$apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')));
 ?>
 
 <footer id="colophon" class="bg-[#9C1112] text-center text-white dark:bg-neutral-600 dark:text-neutral-200 site-footer">
@@ -24,43 +34,90 @@
                 <div class="mb-6 lg:mb-0">
                     <ul class="list-none">
                         <h3 class="mb-5"> Social </h3>
-                        <li>
-                            Instagaram
-                        </li>
-                        <li>
-                            Facebook
-                        </li>
-                        <li>
-                            Twitter
-                        </li>
-                        <li>
-                            Youtube
-                        </li>
+                        <?php
+                        if ($instagram):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $instagram; ?>">
+                                    Instagaram
+                                </a>
+
+                            </li>
+                        <?php
+                        endif;
+                        if ($facebook):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $facebook; ?>">
+                                    Facebook
+                                </a>
+
+                            </li>
+                        <?php
+                        endif;
+                        if ($twitter):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $twitter; ?>">
+                                    Twitter
+                                </a>
+
+                            </li>
+                        <?php
+                        endif;
+                        if ($youtube):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $youtube; ?>">
+                                    Youtube
+                                </a></li>
+                        <?php
+                        endif;
+                        ?>
                     </ul>
                 </div>
                 <div class="mb-6 lg:mb-0">
                     <ul class="list-none">
                         <h3 class="mb-5"> Listen On </h3>
+                        <?php
+                        if ($spotify):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $spotify; ?>">
+                                    Spotify
+                                </a>
+
+                            </li>
+                        <?php
+                        endif;
+                        if ($sound_cloud):
+                            ?>
+                            <li><a target="_blank" href="<?php echo $sound_cloud; ?>">
+                                    Sound cloud
+                                </a>
+
+                            </li>
+                        <?php
+                        endif;
+                        if ($apple_podcast):
+                        ?>
                         <li>
-                            <a href="">Spotify</a>
+                            <a href="<?php echo $apple_podcast; ?>">Apple Podcast</a>
                         </li>
-                        <li>
-                            <a href="">Sound Cloud</a>
-                        </li>
-                        <li>
-                            <a href="">Apple Podcast</a>
-                        </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <div class="mb-6 lg:mb-0">
                     <ul class="list-none">
                         <h3 class="mb-5"> Contact </h3>
+                        <?php
+                        if($email):
+                        ?>
                         <li>
-                            <a href="mailto:periodkaakura@gmail.com">periodkaakura@gmail.com</a>
+                            <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                         </li>
+                        <?php endif;
+                        if($contact):
+                        ?>
                         <li>
-                            <a href="tel:+9779800001223">9800001223</a>
+                            <a href="tel:<?php echo $contact; ?>"><?php echo $contact; ?></a>
                         </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <div class="mb-6 lg:mb-0">
@@ -81,14 +138,14 @@
         <div class="flex justify-around items-center pb-4">
 
             <div
-                    class="text-white text-xl font-bold dark:bg-neutral-700 dark:text-neutral-200">
+                    class="text-white text-sm font-bold dark:bg-neutral-700 dark:text-neutral-200">
                 © <?php echo date('Y'); ?> Copyright:
-                <a class="" href="https://tailwind-elements.com/"
+                <a class="" href="/"
                 >PeriodKaaKura</a
                 >
             </div>
 
-            <a class="text-[#29CC97] text-xl font-bold"  px-4" href="https://tailwind-elements.com/"
+            <a class="text-[#29CC97] text-sm font-bold" href=""
             > Website By: Sweven Visuals</a
         </div>
     </div>

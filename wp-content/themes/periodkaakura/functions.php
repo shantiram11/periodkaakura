@@ -28,6 +28,11 @@ function getIdBySlug($slug, $post_type = 'post'): int
 
     return $id;
 }
+register_nav_menus(
+
+    array('primary-menu' => 'Header',
+    ),
+);
 
 require get_template_directory() . '/inc/setup.php';
 require get_template_directory() . '/inc/widgets.php';

@@ -22,6 +22,9 @@ body {
     padding-right: 15px;
     margin: auto;
 }
+footer{
+    background-color: #9C1112 !important;
+}
 footer ul h3 {
     color: #FFF;
     font-family: Arial;
@@ -36,7 +39,7 @@ footer ul li{
     font-family: Arial;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 8px;
 }
@@ -50,4 +53,38 @@ footer ul li{
 
 #pagination {
     margin-left: 500px;
+}
+
+/*======================404page css */
+#404-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.error-container {
+    text-align: center;
+    padding: 100px;
+}
+.error-heading {
+    font-size: 36px;
+    color: #9C1112;
+    margin-bottom: 20px;
+}
+.error-message {
+    font-size: 24px;
+    color: #9C1112;
+}
+.back-link {
+    margin-top: 20px;
+}
+.back-link a {
+    /*border-bottom: 2px solid#9D1212;*/
+    color: #9C1112;
+    text-align: center;
+    /*font-family: Montserrat;*/
+    /*font-size: 16px;*/
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }

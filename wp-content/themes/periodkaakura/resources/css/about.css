@@ -1,0 +1,77 @@
+.about-title{
+    color: #9C1112;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.about-text{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.about-m-title{
+    color: #9C1112;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.about-m-text{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 107.9%; /* 25.896px */
+}
+.about .description{
+    border-radius: 35px;
+    background: #D49C4D;
+    padding : 44px;
+}
+.donation-box .donate-title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.donation-wrapper{
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: linear-gradient(198deg, #D71B1B 3.26%, #9D1212 57.01%);
+    box-shadow: -6px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.donation-wrapper a img{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: -6px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 0 15px 0px 15px;
+}
+.donation-wrapper a span{
+    margin-top: 10px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.donation-icon{
+    display: grid;
+    place-content: center;
+    margin-top: -90px;
+}
+.donation-wrapper a{
+    margin-bottom: 50px;
+}

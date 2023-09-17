@@ -10,33 +10,20 @@ function register_episode_metabox()
 {
     /** begin: episode meta box*/
     $cmb = new_cmb2_box(array(
-        'id'           => 'section_meta_box',
-        'title'        => 'Section  Meta',
+        'id'           => 'section_episode_meta_box',
+        'title'        => 'Episode Section  Meta',
         'object_types' => array('sections'), // post type
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
         'priority'     => 'high',  //  'high', 'core', 'default' or 'low'
         'show_names'   => true, // Show field names on the left
-//        'show_on'      => array( 'key' => 'section-template', 'value' => 'templates/home.php' ),
-    ));
-    $cmb->add_field(array(
-        'name' => __('section Title', 'cmb2'),
-        'desc' => __('Enter the section Title', 'cmb2'),
-        'id'   => 'section_title',
-        'type' => 'text',
-    ));
+        'show_on_cb'  => 'pkk_show_only_in_section_episodes',
 
-    $cmb->add_field(array(
-        'name' => __('Section Subtitle', 'cmb2'),
-        'desc' => __('Enter the section Subtitle', 'cmb2'),
-        'id'   => 'section_subtitle',
-        'type' => 'text',
     ));
     /**End:  section meta box*/
     $group_field_id = $cmb->add_field( array(
         'id'          => 'section_episode_repeat_group',
         'type'        => 'group',
-        'description' => __( 'Reusable Services', 'cmb2' ),
-        'show_on_cb'  => 'pkk_show_only_in_section_episodes',
+        'description' => __( 'Reusable Episode Upload', 'cmb2' ),
         // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
             'group_title'       => __( 'Episode{#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
@@ -58,6 +45,15 @@ function register_episode_metabox()
         'name' => 'Episode Description',
         'id'   => 'Episode_body',
         'type' => 'wysiwyg',
-        // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-    ) );
+        'sanitization_cb' => 'my_custom_sanitize_function', // Add a custom sanitize function
+        'options' => array(
+            'attributes' => array(
+                'maxlength' => 65535,
+            )),
+    ));
+
+    function my_custom_sanitize_function($value, $field_args, $field) {
+        $value = htmlspecialchars_decode($value); // Escape special characters
+        return $value;
+    }
 }

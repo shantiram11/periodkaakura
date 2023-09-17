@@ -19,6 +19,70 @@ if (file_exists(get_template_directory() . '/inc/custom-meta-box/cmb2/init.php')
     require_once get_template_directory() . '/inc/custom-meta-box/cmb2/init.php';
 }
 
+
+function pkk_show_only_in_section_hero_sections($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section Hero
+    if ($slug === "section-hero") {
+        return true;
+    }
+    return false;
+}
+
+function pkk_show_only_in_section_episodes($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section episodes
+    if ($slug === "episodes") {
+        return true;
+    }
+    return false;
+}
+
+function pkk_show_only_in_testimonial_section($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section episodes
+    if ($slug === "testimonials") {
+        return true;
+    }
+    return false;
+}
+
+function pkk_show_only_in_news($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section episodes
+    if ($slug === "news") {
+        return true;
+    }
+    return false;
+}
+function pkk_show_only_in_team($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section episodes
+    if ($slug === "team") {
+        return true;
+    }
+    return false;
+}
+function pkk_show_only_in_gallery($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section gallery
+    if ($slug === "gallery") {
+        return true;
+    }
+    return false;
+}
 /*start: page meta box */
 require get_template_directory() . '/inc/custom-meta-box/page-meta.php';
 /*end: page meta box */
