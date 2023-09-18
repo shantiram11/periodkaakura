@@ -27,21 +27,31 @@ footer{
 }
 footer ul h3 {
     color: #FFF;
-    font-family: Arial;
+    font-family: Montserrat, 'sans-serif';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: left;
 }
 footer ul li{
     color: #FFF;
-    text-align: center;
-    font-family: Arial;
+    text-align: left;
+    font-family: Montserrat, 'sans-serif';
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 8px;
+}
+footer .logo-tag{
+    text-align: left;
+    color: #D49C4D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 /*pagination in episode list*/
 .section-episode-list .item {
@@ -54,7 +64,24 @@ footer ul li{
 #pagination {
     margin-left: 500px;
 }
-
+#pagination.light-theme .current {
+    background: #121212 !important;
+    color: #fff;
+    font-weight: 700 !important;
+    border-color: #121212;
+    cursor: default;
+    box-shadow: unset;
+}
+#pagination.light-theme.simple-pagination{
+    display:grid !important;
+    place-content: center !important;
+}
+#pagination.light-theme a{
+    color: #121212 !important;
+    font-weight: 700;
+    border: unset;
+    box-shadow: none;
+}
 /*======================404page css */
 #404-page {
     font-family: Arial, sans-serif;

@@ -16,7 +16,15 @@ $spotify = nl2br(htmlspecialchars_decode(get_option('pkk_spotify')));
             <div class="hero-left">
                 <h2><?php echo htmlspecialchars($title); ?>
                 </h2>
-                <p class="font-semibold text-lg mb-5"><?php echo $subtitle; ?></p>
+                <div class="hero-content">
+                    <p class="font-semibold text-lg mb-5">
+                        <span class="subtitle"><?php echo substr($subtitle, 0, 100); ?></span>
+                        <span class="full-subtitle" style="display: none;"><?php echo $subtitle; ?></span>
+                        <?php if (strlen($subtitle) > 100) { ?>
+                            <button class="text-sm text-red-700 read-more-btn">Read More..</button>
+                        <?php } ?>
+                    </p>
+                </div>
                 <div class="m-auto grid items-center  font-bold text-xs text-red-700">
                     <p class="mt-6 pb-1">Latest Episode: Period ka kura</p>
                     <div class="flex gap-[25px] mb-6">
@@ -37,7 +45,7 @@ $spotify = nl2br(htmlspecialchars_decode(get_option('pkk_spotify')));
                         <!--                            <span class="text-red-900">Browse All</span>-->
                         <!--                        </a>-->
                     </div>
-                    <figure class="mb-5">
+                    <figure class="mb-[8px]">
                         <a href="" class=" cursor-auto subscribe-btn flex items-center gap-2">
                             <img class="h-9 w-9"
                                  src="<?php echo get_template_directory_uri() . '/assets/img/mic.png' ?>"
@@ -63,7 +71,7 @@ $spotify = nl2br(htmlspecialchars_decode(get_option('pkk_spotify')));
                             ?>
                             <li class=""><a href="<?php echo $apple_podcast; ?>" target="_blank"
                                             class="cursor-pointer flex gap-2 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 12 14"
                                          fill="none">
                                         <path d="M11.1457 4.96554C11.0671 5.02648 9.6805 5.80781 9.6805 7.54516C9.6805 9.55469 11.4449 10.2656 11.4977 10.2832C11.4896 10.3265 11.2174 11.2568 10.5675 12.2047C9.98789 13.0389 9.38259 13.8717 8.46178 13.8717C7.54097 13.8717 7.304 13.3368 6.241 13.3368C5.20509 13.3368 4.83677 13.8893 3.9945 13.8893C3.15223 13.8893 2.56453 13.1174 1.88882 12.1695C1.10613 11.0564 0.473755 9.3272 0.473755 7.68599C0.473755 5.05356 2.18538 3.65745 3.86992 3.65745C4.765 3.65745 5.51113 4.24514 6.07309 4.24514C6.60797 4.24514 7.44212 3.62224 8.46042 3.62224C8.84635 3.62224 10.233 3.65745 11.1457 4.96554ZM7.977 2.50779C8.39813 2.00812 8.69604 1.3148 8.69604 0.621485C8.69604 0.525341 8.68792 0.427844 8.67032 0.349304C7.98512 0.375033 7.16994 0.805647 6.67839 1.37574C6.29246 1.81447 5.93226 2.50779 5.93226 3.21058C5.93226 3.31621 5.94986 3.42183 5.95799 3.45568C6.00132 3.46381 6.07174 3.47329 6.14215 3.47329C6.75693 3.47329 7.53014 3.06163 7.977 2.50779Z"
                                               fill="#121212"/>

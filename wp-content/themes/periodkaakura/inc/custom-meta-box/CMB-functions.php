@@ -83,12 +83,24 @@ function pkk_show_only_in_gallery($field): bool
     }
     return false;
 }
+function pkk_show_only_in_videos($field): bool
+{
+    $slug = get_post_field('post_name', $field->object_id);
+
+    //testimonial will only be displayed in section gallery
+    if ($slug === "videos") {
+        return true;
+    }
+    return false;
+}
+
+
 /*start: page meta box */
 require get_template_directory() . '/inc/custom-meta-box/page-meta.php';
 /*end: page meta box */
 
 /*start: About page meta box */
-require get_template_directory() . '/inc/custom-meta-box/contact-meta.php';
+require get_template_directory() . '/inc/custom-meta-box/about-meta.php';
 /*end: About page meta box */
 
 /*start: About page meta box */

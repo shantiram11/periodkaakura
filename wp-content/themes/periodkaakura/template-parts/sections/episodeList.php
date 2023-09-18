@@ -8,13 +8,13 @@ $episodes = get_post_meta($post_id, 'section_episode_repeat_group', true);
 
 <section class="section-episode-list  mt-6 mb-20" id="episode">
     <div class="container">
-        <div class="flex flex-wrap items-center justify-between mb-10">
+        <div class="flex flex-wrap items-center justify-between mb-2">
             <div>
                 <p class="title">Latest Episodes</p>
-                <span class="sub-title">Browse All</span>
+<!--                <span class="sub-title">Browse All</span>-->
             </div>
             <form class="w-[60%]   search-form" method="post" action="">
-                <input class="w-full p-1 h-[50px]" type="text">
+<!--                <input class="w-full p-1 h-[50px]" type="text">-->
             </form>
             <!--            <div class="select-wrapper">-->
             <!--                <div class="select-header">-->

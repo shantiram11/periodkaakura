@@ -135,4 +135,13 @@ jQuery(document).ready(function ($) {
     });
     /** end: mobile menu */
 
+    $(".read-more-btn").click(function() {
+        var subtitle = $(".subtitle");
+        var fullSubtitle = $(".full-subtitle");
+        subtitle.toggle();
+        fullSubtitle.toggle();
+        $(this).text(function(i, text){
+            return text === "Read More.." ? "Read Less" : "Read More..";
+        });
+    });
 });

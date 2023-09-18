@@ -25,12 +25,13 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
     <div class="site-info">
         <!--Footer container-->
         <div class="container p-6">
-            <div class="py-[45px]">
+            <div class="py-[45px] flex justify-between gap-8 px-[10%] items-center">
                 <img
                         src="<?php echo get_template_directory_uri() ?>/assets/img/temp/footer-logo.jpeg"
-                        class="w-[96px] m-auto sm:m-1 rounded-full  shadow-lg"/>
+                        class="w-[96px]  rounded-full  shadow-lg"/>
+                <p class="logo-tag">Period Kaa Kura Podcast is an initiation of two young women from Nepal, Shristi Kafle and Priyanka Budhathoki, breaking the rooted silence  </p>
             </div>
-            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div class="flex justify-around items-start gap-4 ">
                 <div class="mb-6 lg:mb-0">
                     <ul class="list-none">
                         <h3 class="mb-5"> Social </h3>
@@ -72,7 +73,7 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
                         ?>
                     </ul>
                 </div>
-                <div class="mb-6 lg:mb-0">
+                <div class="mb-6 lg:mb-0 grid place-content-end">
                     <ul class="list-none">
                         <h3 class="mb-5"> Listen On </h3>
                         <?php
@@ -95,47 +96,36 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
                         <?php
                         endif;
                         if ($apple_podcast):
-                        ?>
-                        <li>
-                            <a href="<?php echo $apple_podcast; ?>">Apple Podcast</a>
-                        </li>
+                            ?>
+                            <li>
+                                <a href="<?php echo $apple_podcast; ?>">Apple Podcast</a>
+                            </li>
                         <?php endif; ?>
                     </ul>
                 </div>
-                <div class="mb-6 lg:mb-0">
+                <div class="mb-6 lg:mb-0 grid place-content-end">
                     <ul class="list-none">
                         <h3 class="mb-5"> Contact </h3>
                         <?php
-                        if($email):
-                        ?>
-                        <li>
-                            <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-                        </li>
+                        if ($email):
+                            ?>
+                            <li>
+                                <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                            </li>
                         <?php endif;
-                        if($contact):
-                        ?>
-                        <li>
-                            <a href="tel:<?php echo $contact; ?>"><?php echo $contact; ?></a>
-                        </li>
+                        if ($contact):
+                            ?>
+                            <li>
+                                <a href="tel:<?php echo $contact; ?>"><?php echo $contact; ?></a>
+                            </li>
                         <?php endif; ?>
-                    </ul>
-                </div>
-                <div class="mb-6 lg:mb-0">
-                    <ul class="list-none">
-                        <h3 class="mb-5"> Tech Support </h3>
-                        <li>
-                            Sweven Visuals
-                        </li>
-                        <li>
-                            Swevenvisuals@gmail.com
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!--Copyright section-->
-        <div class="flex justify-around items-center pb-4">
+        <div class=" mt-10 pb-4">
 
             <div
                     class="text-white text-sm font-bold dark:bg-neutral-700 dark:text-neutral-200">

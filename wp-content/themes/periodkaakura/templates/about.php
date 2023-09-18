@@ -9,10 +9,20 @@
 
 get_header();
 
+$id = get_the_ID();
+$banner_image = get_post_meta($id, 'banner_image', true);
+$title = get_post_meta($id, 'about_title', true);
+$description = get_post_meta($id, 'about_description', true);
+$background_image = get_post_meta($id, 'background_image', true);
+$card_title = get_post_meta($id, 'card_title', true);
+$card_desc = get_post_meta($id, 'card_body', true);
+$esewa = get_post_meta($id, 'esewa', true);
+$paypal = get_post_meta($id, 'paypal', true);
+$content = get_post_meta($id, 'about_repeat_group', true);
 ?>
     <style>
         .about-banner {
-            background-image: url("<?php echo get_template_directory_uri() ?>/assets/img/temp/about-desc.png");
+            background-image: url("<?php echo $background_image ?>");
             background-color: red;
             height: 850px;
             padding-top: 450px;
@@ -20,144 +30,98 @@ get_header();
             background-repeat: no-repeat;
             background-size: cover;
         }
-        @media (max-width: 768px){
-            .about-banner{
+
+        @media (max-width: 768px) {
+            .about-banner {
                 height: unset;
                 padding-bottom: 50px;
             }
         }
     </style>
     <main id="primary" class="site-main">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/about.png" alt="animated-picture-of-hosts">
+        <img class="cover-image" src="<?php echo $banner_image; ?>" alt="animated-picture-of-hosts">
         <section class="about">
             <div class="container ">
                 <div class="my-[100px]">
                     <h2 class="about-title mb-4">
-                        About Us
+                        <?php echo $title ?>
                     </h2>
                     <p class="about-text">
-                        Welcome to Period Kaa Kura, a Nepali podcast by Priyanka Budhathoki and Shristi Kafle. We are
-                        two
-                        voices
-                        from Nepal who dared to break the silence surrounding menstruation.
-                        <br/><br/>
-                        Our story is rooted in a shared experience: the isolation and confusion we felt as young girls
-                        when
-                        society labeled us "impure" just because we had our periods. With just a small microphone, a
-                        laptop,
-                        and
-                        our mobile phones, we took our first steps towards making this vision a reality. We are not just
-                        co-hots
-                        but friends and sisters with a shared passion and vision to dignified menstruation.
-                        <br/><br/>
-                        This personal journey sparked a fierce passion to challenge menstrual discrimination and break
-                        the
-                        chains of menstrual taboos in Nepal. What began as a small idea has grown into a vibrant
-                        community
-                        of
-                        people dedicated to promoting menstrual health, breaking taboos, and advocating for dignified
-                        menstruation. We are thrilled to have you join us on this journey!
+                        <?php echo nl2br($description) ?>
                     </p>
                 </div>
             </div>
             <div class="about-banner">
-                <!--                <img src="-->
-                <?php //echo get_template_directory_uri() ?><!--/assets/img/temp/about-desc.png"-->
-                <!--                     alt="picture-of-hosts">-->
                 <div class="container">
                     <div class="description">
-                        <h3 class="about-m-title pb-[27px]">Why Podcast Period Kaa Kura?</h3>
+                        <h3 class="about-m-title pb-[27px]"><?php echo $card_title; ?></h3>
                         <p>
-                            We understand the pain and shame that often accompany menstruation in our society, and we're
-                            here to change that narrative. We believe in the power of stories. Through Period Kaa Kura,
-                            we
-                            recognized that the experiences and voices of menstruators, especially those in marginalized
-                            communities, were often ignored or stifled.
-
-                            We started this podcast to create a safe space for these voices to be heard, for taboos to
-                            be
-                            shattered, and for stigma to be replaced with understanding on menstrual health and
-                            dignified
-                            menstruation.
-
-                            Our goal is to provide accurate information, support, and empowerment to all menstruators,
-                            regardless of their gender or background. We envision a Nepal where menstruation is no
-                            longer a
-                            source of shame or secrecy, but a topic discussed with dignity and respect.
+                            <?php echo nl2br($card_desc); ?>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="my-[100px]">
-                    <h2 class="about-title mb-4">
-                        Our Goal
-                    </h2>
-                    <p class="about-text">
-                        Our goal is to provide accurate information, support, and empowerment to all menstruators,
-                        regardless of their gender or background. We envision a Nepal where menstruation is no longer a
-                        source of shame or secrecy, but a topic discussed with dignity and respect.
-                    </p>
-                </div>
-                <div class="mb-[100px]">
-                    <h2 class="about-title mb-4">
-                        What do we do and how?
-                    </h2>
-                    <p class="about-text">
-                        Period Kaa Kura isn't just a podcast; it's a movement. We produce a fortnightly podcast where we
-                        engage in candid conversations about menstruation. We invite menstruators, including women,
-                        girls, non-binary, queer, and trans individuals, to share their stories and experiences. Our
-                        episodes cover a wide range of topics, from debunking myths to discussing the intersectionality
-                        of menstruation with aspects like caste, class, religion, and sexuality. We also collaborate
-                        with local activists, organizations, and movements to create a united front against menstrual
-                        discrimination. This allows us to build networks, amplify voices, and create a safe space where
-                        menstruators can openly express themselves without fear or shame.
-
-                        The podcast equipment, recording sessions, and production have all been powered by our personal
-                        funds. We believe so strongly in this mission that we've poured our own resources into making it
-                        a reality.
-
-                        However, we can't do it alone. To ensure the sustainability and growth of Period Kaa Kura, we
-                        need your support. Your contributions can help us reach more people, produce high-quality
-                        content, and further our advocacy for menstrual health rights. If you'd like to be part of our
-                        journey and help us in our mission, please consider donating.
-                    </p>
+                <div class="mt-[100px] mb-[150px]">
+                    <?php if (isset($content)):
+                        foreach ($content as $item):
+                            ?>
+                            <div class="my-[50px]">
+                                <h2 class="about-title mb-4">
+                                    <?php echo $item['title']; ?>
+                                </h2>
+                                <p class="about-text">
+                                    <?php echo $item['description']; ?>
+                                </p>
+                            </div>
+                        <?php
+                        endforeach;
+                    endif;
+                    ?>
                 </div>
             </div>
 
             <div class="donation-box mt-[]">
                 <div class="container">
                     <div class="donation-wrapper">
-                   <div  class="donation-icon">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
-                           <circle cx="90" cy="90" r="84.5" fill="white" stroke="#CD1919" stroke-width="11"/>
-                           <g filter="url(#filter0_d_1483_4494)">
-                               <path d="M94.0892 90C102.744 90 109.769 83.056 109.769 74.5C109.769 65.944 102.744 59 94.0892 59C85.434 59 78.4095 65.944 78.4095 74.5C78.4095 83.056 85.434 90 94.0892 90ZM111.18 107.36C109.957 106.12 108.42 105.5 106.633 105.5H85.671C85.0159 105.5 84.3654 105.39 83.7465 105.176L79.6097 103.74C78.81 103.463 78.3894 102.587 78.6726 101.79C78.9586 100.985 79.8501 100.572 80.6492 100.874L83.8475 102.084C84.3988 102.293 84.9835 102.4 85.573 102.4H93.462C94.5596 102.4 95.4376 101.966 96.1589 101.253C96.8802 100.54 97.2251 99.672 97.2251 98.711C97.2251 97.037 96.4098 95.89 94.7791 95.239L72.8451 87.2161C72.2734 87.007 71.6694 86.9 71.0606 86.9C68.1916 86.9 65.8658 89.2258 65.8658 92.0948V102.782C65.8658 109.891 70.5898 116.134 77.4311 118.067L81.2172 119.136C85.5066 120.347 90.0697 120.168 94.2509 118.624L108.459 113.377C111.197 112.365 113.23 109.438 111.18 107.36ZM59.5939 93.197C59.5939 89.7192 56.7747 86.9 53.297 86.9C49.8192 86.9 47 89.7192 47 93.197V114.703C47 118.181 49.8192 121 53.297 121C56.7747 121 59.5939 118.181 59.5939 114.703V93.197Z" fill="#9D1212"/>
-                           </g>
-                           <defs>
-                               <filter id="filter0_d_1483_4494" x="32" y="39" width="117.016" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                   <feOffset dx="11" dy="6"/>
-                                   <feGaussianBlur stdDeviation="13"/>
-                                   <feComposite in2="hardAlpha" operator="out"/>
-                                   <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                   <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1483_4494"/>
-                                   <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1483_4494" result="shape"/>
-                               </filter>
-                           </defs>
-                       </svg>
-                   </div>
+                        <div class="donation-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"
+                                 fill="none">
+                                <circle cx="90" cy="90" r="84.5" fill="white" stroke="#CD1919" stroke-width="11"/>
+                                <g filter="url(#filter0_d_1483_4494)">
+                                    <path d="M94.0892 90C102.744 90 109.769 83.056 109.769 74.5C109.769 65.944 102.744 59 94.0892 59C85.434 59 78.4095 65.944 78.4095 74.5C78.4095 83.056 85.434 90 94.0892 90ZM111.18 107.36C109.957 106.12 108.42 105.5 106.633 105.5H85.671C85.0159 105.5 84.3654 105.39 83.7465 105.176L79.6097 103.74C78.81 103.463 78.3894 102.587 78.6726 101.79C78.9586 100.985 79.8501 100.572 80.6492 100.874L83.8475 102.084C84.3988 102.293 84.9835 102.4 85.573 102.4H93.462C94.5596 102.4 95.4376 101.966 96.1589 101.253C96.8802 100.54 97.2251 99.672 97.2251 98.711C97.2251 97.037 96.4098 95.89 94.7791 95.239L72.8451 87.2161C72.2734 87.007 71.6694 86.9 71.0606 86.9C68.1916 86.9 65.8658 89.2258 65.8658 92.0948V102.782C65.8658 109.891 70.5898 116.134 77.4311 118.067L81.2172 119.136C85.5066 120.347 90.0697 120.168 94.2509 118.624L108.459 113.377C111.197 112.365 113.23 109.438 111.18 107.36ZM59.5939 93.197C59.5939 89.7192 56.7747 86.9 53.297 86.9C49.8192 86.9 47 89.7192 47 93.197V114.703C47 118.181 49.8192 121 53.297 121C56.7747 121 59.5939 118.181 59.5939 114.703V93.197Z"
+                                          fill="#9D1212"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_1483_4494" x="32" y="39" width="117.016" height="114"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                       result="hardAlpha"/>
+                                        <feOffset dx="11" dy="6"/>
+                                        <feGaussianBlur stdDeviation="13"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix"
+                                                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                 result="effect1_dropShadow_1483_4494"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1483_4494"
+                                                 result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
                         <p class="donate-title text-center  m-auto mt-[100px] mb-[56px]">Donate us to keep the podcast
                             running</p>
                         <div class="md:flex justify-center items-center gap-5 md:gap-24 md:px-0 px-8">
                             <a><img class="w-[200px] h-[80px]" alt="paypal-logo"
                                     src="<?php echo get_template_directory_uri() . '/assets/img/paypal-logo.png' ?>">
-                                <span>+85585825475</span>
+                                <span><?php  echo $paypal; ?></span>
                             </a>
                             <a><img class="w-[200px] h-[80px]" alt="esewa-logo"
                                     src="<?php echo get_template_directory_uri() . '/assets/img/esewa-logo.png' ?>">
-                                <span>+9779849057233</span>
+                                <span><?php  echo $esewa; ?></span>
                             </a>
                         </div>
                     </div>

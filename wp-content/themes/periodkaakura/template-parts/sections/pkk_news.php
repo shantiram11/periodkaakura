@@ -11,9 +11,9 @@ $news = get_post_meta($post_id, 'section_news_repeat_group', true);
         <p class="title py-2"><?php echo $title ?></p>
         <span class="subtitle">Sub-title text lorem ipsuim</span>
 
-        <div class="py-6 news-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 flex-wrap">
+        <div class="pb-6 pt-3 news-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 flex-wrap">
             <?php
-            if (isset($news)):
+            if (!empty($news)):
                 foreach ($news as $single_news):
                     ?>
                     <div class="relative">

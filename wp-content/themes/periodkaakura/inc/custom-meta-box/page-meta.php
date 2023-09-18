@@ -9,6 +9,7 @@ add_action('cmb2_admin_init', 'register_testimonial_section_metabox');
 add_action('cmb2_admin_init', 'register_section_news_metabox');
 add_action('cmb2_admin_init', 'register_section_team_metabox');
 add_action('cmb2_admin_init', 'register_section_gallery_metabox');
+add_action('cmb2_admin_init', 'register_section_videos_metabox');
 
 function register_hero_section_metabox()
 {
@@ -275,3 +276,49 @@ function register_section_gallery_metabox()
         // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
     ) );
 }
+
+function register_section_videos_metabox()
+{
+    /** begin: hero_section meta box*/
+    $cmb = new_cmb2_box(array(
+        'id' => 'section_videos_meta_box',
+        'title' => ' Section Video Meta',
+        'object_types' => array('sections'), // post type
+        'context' => 'normal', //  'normal', 'advanced', or 'side'
+        'priority' => 'high',  //  'high', 'core', 'default' or 'low'
+        'show_names' => true, // Show field names on the left
+        'show_on_cb'  => 'pkk_show_only_in_videos',
+    ));
+    /**End:  section meta box*/
+    $group_field_id = $cmb->add_field( array(
+        'id'          => 'section_videos_repeat_group',
+        'type'        => 'group',
+        'description' => __( 'Reusable Video Upload', 'cmb2' ),
+
+        // 'repeatable'  => false, // use false if you want non-repeatable group
+        'options'     => array(
+            'group_title'       => __( 'Video{#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+            'add_button'        => __( 'Add Another Video', 'cmb2' ),
+            'remove_button'     => __( 'Remove Video', 'cmb2' ),
+            'sortable'          => true,
+            'closed'         => true, // true to have the groups closed by default
+            'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
+        ),
+    ) );
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Youtube Iframe',
+        'id'   => 'iframe',
+        'type' => 'wysiwyg',
+        'sanitization_cb' => 'custom_sanitize_function', // Add a custom sanitize function
+        'options' => array(
+            'attributes' => array(
+                'maxlength' => 65535,
+            )),
+        // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+    ) );
+    function custom_sanitize_function($value, $field_args, $field) {
+        $value = htmlspecialchars_decode($value); // Escape special characters
+        return $value;
+    }
+}
+

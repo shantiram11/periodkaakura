@@ -15,7 +15,7 @@ $gallery = get_post_meta($post_id, 'section_gallery_repeat_group', true);
                     foreach ($gallery as $image):
                         ?>
                         <div class="gallery-item flex flex-col justify-around items-center">
-                            <img class="img-fluid cover-image" src="<?php echo $image['image'] ?>" alt="gallery images periodkaakura"/>
+                            <img class="img-fluid rounded-[35px] cover-image" src="<?php echo $image['image'] ?>" alt="gallery images periodkaakura"/>
                             <p class="caption mt-2">
                                 <?php echo $image['caption'] ?>
                             </p>

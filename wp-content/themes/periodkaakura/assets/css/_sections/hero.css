@@ -1,10 +1,10 @@
-@media screen and (min-width:768px) {
-    .hero-section{
+@media screen and (min-width: 768px) {
+    .hero-section {
         padding-top: 60px;
     }
 }
 
-.hero-section .hero-left h2{
+.hero-section .hero-left h2 {
     margin-top: 100px;
     font-family: montserrat, sans-serif;
     font-weight: 800;
@@ -12,27 +12,31 @@
     line-height: 60px;
     color: #9C1112;
 }
-.red-play-button{
+
+.red-play-button {
     border-radius: 25px;
     background: #9C1112;
     padding: 12px 43px;
     border: 1px solid #000;
     box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.50);
 }
-.white-play-button{
+
+.white-play-button {
     border-radius: 25px;
     background: #FFF;
     padding: 12px 43px;
     box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.50);
 }
+
 .red-play-button span,
-.white-play-button span{
+.white-play-button span {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
+
 .hero-section .subscribe-btn {
     color: #9C1112;
     font-family: Montserrat;
@@ -41,20 +45,26 @@
     font-weight: 800;
     line-height: normal;
 }
-.media-feed li{
-    border-radius: 15px;
+
+.media-feed li {
+    border-radius: 25px;
     background: #ECECEC;
     padding: 7px 14px;
-}
-.media-feed li span{
     color: #121212;
-    font-family: Sen;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: all 400ms ease;
 }
-.hero-section .single-audio-player{
+
+.media-feed li:hover {
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.50);
+    background-color: #fff;
+    scale: 1.1;
+}
+
+.hero-section .single-audio-player {
     /* display: flex; */
     gap: 3%;
     grid-template-columns: 21% 76%;
@@ -63,7 +73,8 @@
     background: #9D1212;
 
 }
-.single-audio-player span{
+
+.single-audio-player span {
     color: rgba(255, 255, 255, 0.50);
     font-family: Montserrat;
     font-size: 18px;
@@ -71,6 +82,7 @@
     font-weight: 600;
     line-height: normal;
 }
+
 /*.hero-section .single-audio-player .wp-block-presto-player-reusable-edit{*/
 /*    width: 100%;*/
 /*}*/
@@ -86,6 +98,7 @@
 .owl-theme .owl-controls .owl-page {
     display: inline-block;
 }
+
 .owl-theme .owl-controls .owl-page span {
     background: none repeat scroll 0 0 #869791;
     border-radius: 20px;
@@ -95,9 +108,10 @@
     opacity: 0.5;
     width: 12px;
 }
+
 .hero-section .owl-carousel .owl-stage-outer {
     position: relative;
     margin-left: -8vw !important;
     overflow: hidden;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
 }

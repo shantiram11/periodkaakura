@@ -9,14 +9,14 @@ $testimonials = get_post_meta($post_id, 'section_testimonial_section_repeat_grou
 
 <section class="section-testimonials mb-6" id="testimonial">
     <div class="container" >
-        <h3 class="mt-20 text-3xl text-black font-bold mb-12"><?php echo $title ?></h3>
+        <h3 class="mt-20 text-3xl text-black font-bold mb-4"><?php echo $title ?></h3>
         <div id="customers-testimonials" class="flex gap-[60px] owl-carousel" style="overflow-x: hidden">
            <?php
            if(isset($testimonials)):
                foreach ($testimonials as $testimonial):
            ?>
             <div class="testimonial ">
-                <img src="<?php echo $testimonial['image']; ?>">
+                <img class="cover-image " src="<?php echo $testimonial['image']; ?>">
                 <div class="p-8 flex flex-col items-center justify-between testimonial-content">
                     <h3 class="name text-center">
                      <?php echo $testimonial['name']; ?>
