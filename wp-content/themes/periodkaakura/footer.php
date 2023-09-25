@@ -25,13 +25,13 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
     <div class="site-info">
         <!--Footer container-->
         <div class="container p-6">
-            <div class="py-[45px] flex justify-between gap-8 px-[10%] items-center">
+            <div class="py-[45px] flex flex-col md:flex-row justify-between gap-8 px-[10%] items-center">
                 <img
                         src="<?php echo get_template_directory_uri() ?>/assets/img/temp/footer-logo.jpeg"
                         class="w-[96px]  rounded-full  shadow-lg"/>
                 <p class="logo-tag">Period Kaa Kura Podcast is an initiation of two young women from Nepal, Shristi Kafle and Priyanka Budhathoki, breaking the rooted silence  </p>
             </div>
-            <div class="flex justify-around items-start gap-4 ">
+            <div class="flex-wrap flex justify-around items-start gap-4 ">
                 <div class="mb-6 lg:mb-0">
                     <ul class="list-none">
                         <h3 class="mb-5"> Social </h3>
@@ -141,7 +141,7 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>-->
 
 <?php wp_footer(); ?>
 

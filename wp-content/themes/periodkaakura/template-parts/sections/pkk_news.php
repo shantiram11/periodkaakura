@@ -3,15 +3,16 @@ $post_id = getIdBySlug('news', 'sections');
 
 // Get the episodes data from the CMB2 group
 $title = get_post_meta($post_id, 'section_title', true);
+$subtitle = get_post_meta($post_id, 'section_subtitle', true);
 $news = get_post_meta($post_id, 'section_news_repeat_group', true);
 
 ?>
-<section class="pkk-news">
+<section class="pkk-news mt-6 mb-20">
     <div class="container">
         <p class="title py-2"><?php echo $title ?></p>
-        <span class="subtitle">Sub-title text lorem ipsuim</span>
+        <p class="subtitle mt-2 mb-4"><?php echo $subtitle ?></p>
 
-        <div class="pb-6 pt-3 news-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 flex-wrap">
+        <div class=" news-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 flex-wrap">
             <?php
             if (!empty($news)):
                 foreach ($news as $single_news):

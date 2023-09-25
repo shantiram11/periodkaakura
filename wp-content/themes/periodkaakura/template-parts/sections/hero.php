@@ -10,7 +10,7 @@ $apple_podcast = nl2br(htmlspecialchars_decode(get_option('pkk_apple_podcast')))
 $spotify = nl2br(htmlspecialchars_decode(get_option('pkk_spotify')));
 
 ?>
-<section class="hero-section">
+<section class="hero-section mb-20">
     <div class="container">
         <div class="md:grid grid-cols-2 gap-[16%]">
             <div class="hero-left">

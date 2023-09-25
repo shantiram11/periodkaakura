@@ -7,7 +7,7 @@ $testimonials = get_post_meta($post_id, 'section_testimonial_section_repeat_grou
 
 ?>
 
-<section class="section-testimonials mb-6" id="testimonial">
+<section class="section-testimonials mt-6 mb-20" id="testimonial">
     <div class="container" >
         <h3 class="mt-20 text-3xl text-black font-bold mb-4"><?php echo $title ?></h3>
         <div id="customers-testimonials" class="flex gap-[60px] owl-carousel" style="overflow-x: hidden">

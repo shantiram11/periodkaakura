@@ -79,7 +79,29 @@ jQuery(document).ready(function ($) {
                 items: 1
             }
         }
-    })
+    });
+    $('#video_slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        autoplayTimeout: 4500,
+        dots: true,
+        touchDrag  : true,
+        mouseDrag  : true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+    });
+
     $(".wrapper .item").slice(4).hide();
     let total = $(".wrapper .item").length;
     $('#pagination').pagination({
