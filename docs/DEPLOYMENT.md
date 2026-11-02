@@ -8,8 +8,13 @@ The site runs on the Hostinger **Premium** shared plan. Staging lives on the exi
 ```
 ~/apps/pkk-staging/            ← git checkout of the laravel-revamp branch (outside the web root)
     public/                    ← the only folder the web can see
-~/domains/.../public_html  →   symlink to ~/apps/pkk-staging/public
+~/domains/periodkaakura.com/public_html/development  →  symlink to ~/apps/pkk-staging/public
 ```
+
+`development.periodkaakura.com` is a subdomain inside the **same hosting account** as the live
+WordPress site (which serves `~/domains/periodkaakura.com/public_html`). That account runs PHP 8.2
+for WordPress; `public/.htaccess` switches just this app to PHP 8.4 with a LiteSpeed handler, so
+**don't change the PHP version in hPanel**, as that would also change the live site.
 
 Keeping the app outside `public_html` means `.env`, the database and the code can never be downloaded.
 
@@ -21,8 +26,8 @@ Keeping the app outside `public_html` means `.env`, the database and the code ca
 
 Open **Websites → development.periodkaakura.com**, then:
 
-1. **Advanced → PHP Configuration → PHP version:** choose **PHP 8.4** and click **Update**.
-   The required extensions (intl, zip, gd, fileinfo, mbstring, pdo_sqlite) are already enabled.
+1. **Leave the PHP version alone** (see above). The required extensions (intl, zip, gd, fileinfo,
+   mbstring, pdo_sqlite) are already enabled account-wide.
 2. **Advanced → SSH Access:** click **Enable**. Note the IP, port and username
    (currently `62.72.50.22`, port `65002`, user `u356965166`, already the defaults in `scripts/deploy-staging.sh`).
 3. **Optional but recommended:** in **SSH Access → SSH keys**, add your Mac's public key so you aren't asked for a password on every deploy:
@@ -33,17 +38,12 @@ Open **Websites → development.periodkaakura.com**, then:
 
 4. **Optional:** **Advanced → Password Protect Directories** to put staging behind a username and password while the creators review it.
 
-### 2. Find the subdomain's web root
+### 2. Web root and PHP on the command line
 
-```bash
-ssh -p 65002 u356965166@62.72.50.22
-ls -d ~/domains/*/public_html ~/domains/*/public_html/*/ 2>/dev/null
-```
-
-Look for the folder serving `development.periodkaakura.com`, usually
-`~/domains/development.periodkaakura.com/public_html`. Keep that path for step 4.
-Check which PHP the command line uses: `php -v`. If it's older than 8.3, the deploy script uses
-`/opt/alt/php84/usr/bin/php` automatically.
+The subdomain's folder is `~/domains/periodkaakura.com/public_html/development`
+(hPanel → Domains → Subdomains). The command-line `php` is 8.2, so on the server always use
+`/opt/alt/php84/usr/bin/php` (the deploy script does this automatically). Tip: add
+`alias php=/opt/alt/php84/usr/bin/php` to `~/.bashrc`.
 
 ### 3. First deploy (from your Mac)
 
@@ -61,9 +61,9 @@ imports all episodes (the first import downloads every cover image, about 3 minu
 ssh -p 65002 u356965166@62.72.50.22
 cd ~/apps/pkk-staging
 nano .env                 # set ADMIN_EMAILS and CONTACT_RECIPIENT (see below)
-php artisan optimize      # use /opt/alt/php84/usr/bin/php if `php -v` is older than 8.3
-php artisan make:filament-user
-scripts/server-deploy.sh link-webroot ~/domains/development.periodkaakura.com/public_html
+/opt/alt/php84/usr/bin/php artisan optimize
+/opt/alt/php84/usr/bin/php artisan make:filament-user
+scripts/server-deploy.sh link-webroot ~/domains/periodkaakura.com/public_html/development
 ```
 
 `link-webroot` moves the old `public_html` aside as `public_html.backup-<date>` (nothing is deleted)
@@ -105,7 +105,7 @@ It refuses to run with uncommitted or unpushed changes, so staging always matche
 
 | Problem | Fix |
 |---|---|
-| 500 error | `tail -50 ~/apps/pkk-staging/storage/logs/laravel-*.log` |
+| 500 error | `tail -50 ~/apps/pkk-staging/storage/logs/laravel-*.log`; if there's no log, `curl` the page: a "Composer detected issues" message means the PHP 8.4 handler in `public/.htaccess` isn't applied |
 | Page has no styles | Run `scripts/deploy-staging.sh` again; it re-uploads `public/build` |
 | Admin says 403 | Your email isn't in `ADMIN_EMAILS`; edit `.env`, then `php artisan optimize` |
 | `.env` change has no effect | Config is cached: `php artisan optimize` |
