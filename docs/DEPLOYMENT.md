@@ -77,11 +77,14 @@ and replaces it with a link to the app.
 
 ### 5. Cron job for the hourly episode sync
 
-hPanel → **Advanced → Cron Jobs → Custom**, every minute (`* * * * *`):
+hPanel → **Advanced → Cron Jobs → Custom**, **Once an hour** (`0 * * * *`), already set up:
 
 ```
 /opt/alt/php84/usr/bin/php /home/u356965166/apps/pkk-staging/artisan schedule:run
 ```
+
+hPanel's shortest preset is hourly, which is enough: the only scheduled task (`episodes:sync`) runs
+hourly at minute 0. If you add tasks that run more often, switch this to every minute.
 
 ---
 
