@@ -16,6 +16,9 @@ return [
 
     'email' => 'periodkakura@gmail.com',
 
+    // Where contact form messages are emailed. Override on staging so test messages don't reach the creators.
+    'contact_recipient' => env('CONTACT_RECIPIENT', 'periodkakura@gmail.com'),
+
     // Comma-separated emails allowed into /admin outside local development.
     'admin_emails' => array_filter(explode(',', env('ADMIN_EMAILS', ''))),
 ];

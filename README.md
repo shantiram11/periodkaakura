@@ -24,6 +24,10 @@ npm run build               # or `npm run dev` while working on views
 - **Team, press and videos** are managed in the admin. Initial content, host photos and press screenshots were carried over from the WordPress site by `ContentSeeder` (images in `database/seeders/assets`).
 - **Contact form** messages land in the admin Inbox and are emailed to `podcast.email`, with Reply-To set to the sender. Spam is handled by a honeypot field and a 5-per-10-minutes rate limit.
 
+## Deploying
+
+Staging deploys to development.periodkaakura.com with `scripts/deploy-staging.sh`. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the one-time Hostinger setup.
+
 ## Production
 
 - Set `ADMIN_EMAILS` (comma-separated) to control who can access `/admin` outside local.

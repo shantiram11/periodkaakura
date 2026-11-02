@@ -29,7 +29,7 @@ class ContactController extends Controller
             'message' => ['required', 'string', 'min:10', 'max:5000'],
         ]));
 
-        Notification::route('mail', config('podcast.email'))->notify(new ContactMessageReceived($message));
+        Notification::route('mail', config('podcast.contact_recipient'))->notify(new ContactMessageReceived($message));
 
         return to_route('contact')->with('sent', true);
     }

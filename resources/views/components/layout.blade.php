@@ -24,6 +24,9 @@
     <title>{{ $fullTitle }}</title>
     <meta name="description" content="{{ $description }}">
     <link rel="canonical" href="{{ url()->current() }}">
+    @unless (app()->isProduction())
+        <meta name="robots" content="noindex, nofollow">
+    @endunless
 
     <meta property="og:site_name" content="Period Kaa Kura">
     <meta property="og:type" content="{{ $type }}">
