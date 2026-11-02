@@ -1,3 +1,9 @@
+# Hostinger (LiteSpeed): run this app on PHP 8.4 even though the hosting account,
+# shared with the WordPress site, defaults to an older PHP version.
+<IfModule LiteSpeed>
+    AddHandler application/x-httpd-php84 .php
+</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
