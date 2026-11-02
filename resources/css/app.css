@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: var(--font-mukta), ui-sans-serif, system-ui, sans-serif;
+    --font-display: var(--font-fraunces), var(--font-mukta), ui-serif, Georgia, serif;
+
+    --color-blood-50: #fdf3f2;
+    --color-blood-100: #fbe3e1;
+    --color-blood-200: #f5c3bf;
+    --color-blood-600: #b4282b;
+    --color-blood-700: #9b1c1f;
+    --color-blood-800: #7a1517;
+    --color-blood-900: #4f0e10;
+
+    --color-cream: #fbf6f0;
+    --color-sand: #f1e6d8;
+    --color-ink: #2a1a1a;
+    --color-marigold: #f2a33a;
+}
+
+@layer base {
+    body {
+        @apply bg-cream text-ink antialiased;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-blood-700;
+    }
+}
+
+.prose-notes p { @apply mb-4 leading-relaxed; }
+.prose-notes a { @apply text-blood-700 underline underline-offset-2; }
+.prose-notes ul { @apply mb-4 list-disc pl-6; }
+.prose-notes ol { @apply mb-4 list-decimal pl-6; }
+.prose-notes strong { @apply font-semibold; }
